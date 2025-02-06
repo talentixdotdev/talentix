@@ -1,0 +1,18 @@
+{
+	"content": {
+		"navbar": {
+			"items": {
+				"talents": "For Talents",
+				"companies": "For Companies",
+				"freelancers": "Freelancers",
+				"blog": "Blog",
+				"pricing": "Pricing",
+				"support": "Support"
+			},
+			"buttons": {
+				"getting-start": "Start a project",
+				"book-call": "Book a call"
+			}
+		}
+	}
+}
