@@ -6,6 +6,7 @@ import {
 	ChartTooltip,
 	ChartTooltipContent,
 } from "@/components/ui/chart";
+import { cn } from "@/utils/classes";
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
 
 const chartData = [
@@ -24,14 +25,14 @@ const chartConfig = {
 	},
 	competitor: {
 		label: "Competitor",
-		color: "#27272a",
+		color: "#494949",
 	},
 } satisfies ChartConfig;
 
-export function RevenueChart() {
+export function RevenueChart({ className }: { className?: string }) {
 	return (
 		<Chart
-			className={"min-h-[200px] w-full focus:outline-none"}
+			className={cn("min-h-[200px] w-full focus:outline-none", className)}
 			config={chartConfig}
 		>
 			<LineChart
@@ -42,7 +43,7 @@ export function RevenueChart() {
 					right: 12,
 				}}
 			>
-				<CartesianGrid vertical={false} />
+				<CartesianGrid vertical={false} strokeDasharray="3 3" />
 				<XAxis
 					dataKey="month"
 					tickLine={false}

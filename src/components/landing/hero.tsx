@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
 		<section className={"relative sm:min-h-svh w-full"}>
 			<DotPattern
 				className={cn(
-					"[mask-image:radial-gradient(450px_circle_at_center,white,transparent)] -top-56 -z-10",
+					"[mask-image:radial-gradient(450px_circle_at_center,white,transparent)] -top-40 -z-10",
 				)}
 			/>
 			<div
