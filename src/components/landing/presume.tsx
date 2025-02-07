@@ -107,11 +107,49 @@ export const Presume: React.FC = () => (
 					</footer>
 				</div>
 			</MagicCard>
-			<MagicCard
-				gradientSize={300}
-				className="cursor-pointer flex-col items-center justify-center whitespace-nowrap text-4xl shadow-2xl"
-			>
-				Magic Card
+			<MagicCard gradientSize={300} className="flex-col shadow-2xl">
+				<div className={"flex flex-col gap-y-4 p-5"}>
+					<header className={"flex flex-col gap-y-2 p-2"}>
+						<Heading level={2}>Talent Opportunities</Heading>
+						<p className={"text-sm"}>
+							Discover exciting projects and advance your career with Talentix's curated opportunities.
+						</p>
+					</header>
+					<div className={"flex flex-col gap-y-4"}>
+						<div className={"p-4 border border-muted rounded-lg"}>
+							<h3 className={"text-primary font-semibold mb-2"}>Featured Project</h3>
+							<p className={"text-sm mb-3"}>Senior Full-Stack Developer needed for innovative fintech platform</p>
+							<div className={"flex justify-between items-center"}>
+								<span className={"text-success font-medium"}>$8k - $12k</span>
+								<Button size={"small"} intent={"secondary"}>
+									Apply Now
+								</Button>
+							</div>
+						</div>
+						<div className={"grid grid-cols-2 gap-3"}>
+							<div className={"p-3 border border-muted rounded-lg"}>
+								<div className={"flex items-center gap-x-2 mb-1"}>
+									<JobSearchIcon size={16} className={"text-primary"} />
+									<p className={"text-sm font-medium"}>Active Projects</p>
+								</div>
+								<p className={"text-2xl font-bold text-primary"}>24</p>
+							</div>
+							<div className={"p-3 border border-muted rounded-lg"}>
+								<div className={"flex items-center gap-x-2 mb-1"}>
+									<JobSearchIcon size={16} className={"text-success"} />
+									<p className={"text-sm font-medium"}>Success Rate</p>
+								</div>
+								<p className={"text-2xl font-bold text-success"}>98%</p>
+							</div>
+						</div>
+					</div>
+					<footer className={"flex flex-col gap-y-2 p-2"}>
+						<p className={"text-sm text-muted-fg"}>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam{" "}
+							<strong>+3,000</strong> tempor invidunt ut labore et dolore magna.
+						</p>
+					</footer>
+				</div>
 			</MagicCard>
 		</div>
 	</AnimatedSection>
