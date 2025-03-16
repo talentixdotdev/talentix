@@ -9,10 +9,10 @@ interface BaseLayoutProps {
 	locale: string;
 }
 
-const inter = Inter();
+const inter = Inter({ subsets: ["latin"] });
 
 const BaseLayout: React.FC<BaseLayoutProps> = async ({ children, locale }) => {
-	const messages = await getMessages();	
+	const messages = await getMessages();
 
 	return (
 		<html lang={locale} suppressHydrationWarning>

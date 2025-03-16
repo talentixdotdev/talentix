@@ -36,6 +36,7 @@ const scheme = z.object({
 });
 
 export default function StartPage() {
+	const t = useTranslations("content.start");
 	const searchParams = useSearchParams();
 	const planFromUrl = searchParams.get("plan") as Plan | null;
 	const defaultPlan =
@@ -62,11 +63,14 @@ export default function StartPage() {
 		>
 			<section className="flex flex-col items-center justify-center w-full px-6 sm:px-8 mt-12">
 				<Heading level={1} className="sm:text-5xl text-4xl">
-					Start a{" "}
-					<mark className="bg-primary text-primary-fg">new project</mark>!
+					{t.rich("heading", {
+						mark: (chunks) => (
+							<mark className="bg-primary text-primary-fg">{chunks}</mark>
+						),
+					})}
 				</Heading>
 				<p className="text-lg text-muted-fg mt-3 max-w-[45ch] text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					{t("description")}
 				</p>
 			</section>
 
@@ -83,7 +87,7 @@ export default function StartPage() {
 				<div className="flex flex-col gap-y-6">
 					<div className="relative inline-flex items-center mb-4">
 						<Label className="absolute text-md text-muted-fg bg-bg pr-3">
-							Project info
+							{t("form.project-info")}
 						</Label>
 						<hr className="shrink-0 inset-0 w-full border border-dashed" />
 						<button
@@ -102,8 +106,8 @@ export default function StartPage() {
 						render={({ field }) => (
 							<TextField
 								{...field}
-								label="Project name"
-								placeholder="My project"
+								label={t("form.name")}
+								placeholder={t("placeholders.name")}
 							/>
 						)}
 					/>
@@ -118,9 +122,9 @@ export default function StartPage() {
 										field.onChange(key);
 									}
 								}}
-								label="Plan"
+								label={t("form.plan")}
 								{...field}
-								placeholder="Select a plan"
+								placeholder={t("placeholders.plan")}
 							>
 								<Select.Trigger />
 								<Select.List items={plans.map((plan) => ({ id: plan }))}>
@@ -139,8 +143,8 @@ export default function StartPage() {
 						render={({ field }) => (
 							<Textarea
 								className="min-h-[100px] max-h-[250px]"
-								label="Description"
-								placeholder="My awesome project"
+								label={t("form.description")}
+								placeholder={t("placeholders.description")}
 								{...field}
 							/>
 						)}
@@ -149,7 +153,7 @@ export default function StartPage() {
 				<div className="flex flex-col gap-y-6">
 					<div className="relative inline-flex items-center mb-4">
 						<Label className="absolute text-md text-muted-fg bg-bg pr-3">
-							Contact
+							{t("form.contact")}
 						</Label>
 						<hr className="shrink-0 inset-0 w-full border border-dashed" />
 						<button
@@ -167,7 +171,7 @@ export default function StartPage() {
 						name="email"
 						render={({ field }) => (
 							<TextField
-								label="Email"
+								label={t("form.email")}
 								placeholder="example@talentix.dev"
 								{...field}
 							/>
@@ -178,7 +182,7 @@ export default function StartPage() {
 						name="phone"
 						render={({ field }) => (
 							<TextField
-								label="Phone"
+								label={t("form.phone")}
 								placeholder="+1 234 567 890"
 								{...field}
 							/>
@@ -187,7 +191,7 @@ export default function StartPage() {
 				</div>
 				<div className="inline-flex justify-between mx-auto">
 					<Button intent="primary">
-						<Rocket01Icon size={20} /> Start My Project!
+						<Rocket01Icon size={20} /> {t("form.submit")}
 					</Button>
 				</div>
 			</Form>

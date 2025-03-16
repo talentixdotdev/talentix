@@ -15,7 +15,7 @@
 			},
 			"footer": {
 				"titles": {
-					"company": "Compañía",
+					"company": "Empresa",
 					"resources": "Recursos",
 					"legals": "Legales"
 				},
@@ -77,7 +77,7 @@
 					"jack": {
 						"name": "Jack",
 						"username": "@jack",
-						"body": "Nunca he visto nada como esto antes. Es increíble. Me encanta."
+						"body": "Nunca he visto nada igual. Es increíble. Me encanta."
 					},
 					"jill": {
 						"name": "Jill",
@@ -106,7 +106,7 @@
 					}
 				},
 				"call-to-action": {
-					"heading": "No pierdas tiempo, Inicia un proyecto <effect>¡Rápido!</effect>",
+					"heading": "No pierdas tiempo, inicia un proyecto <effect>¡Rápido!</effect>",
 					"button": "Comienza ahora"
 				}
 			}
@@ -126,12 +126,12 @@
 				},
 				"big-star": {
 					"name": "Gran Estrella",
-					"description": "Para grandes proyectos que requieren soluciones avanzadas y escalabilidad."
+					"description": "Para proyectos grandes que requieren soluciones avanzadas y escalabilidad."
 				}
 			},
 			"features": {
 				"heading": "Comparar características",
-				"description": "Compara las características para elegir el plan que mejor se adapte a tus necesidades.",
+				"description": "Compara las características para elegir el mejor plan para tus necesidades.",
 				"everything-before": {
 					"heading": "Todo lo anterior",
 					"description": "Incluye todas las características de los planes anteriores."
@@ -169,7 +169,7 @@
 					"description": "Mejora el ranking de tu sitio web en los motores de búsqueda."
 				},
 				"e-commerce-integration": {
-					"heading": "Integración de Comercio Electrónico",
+					"heading": "Integración de E-commerce",
 					"description": "Integra funcionalidad de comercio electrónico en tu sitio."
 				},
 				"dedicated-support": {
@@ -195,6 +195,10 @@
 				"security-audit": {
 					"heading": "Auditoría de Seguridad",
 					"description": "Realiza una auditoría de seguridad exhaustiva."
+				},
+				"free-maintenance": {
+					"heading": "Mantenimiento gratuito por {months, plural, =0 {sin mantenimiento gratuito} =1 {un mes} =12 {1 año} other {# meses}}",
+					"description": "Después de eso, costará {price} por mes."
 				}
 			},
 			"values": {
@@ -238,8 +242,27 @@
 				"join": {
 					"heading": "¿Quieres <mark>unirte a nuestro equipo</mark>?",
 					"description": "Siempre estamos buscando nuevos talentos.",
-					"button": "Contáctenos"
+					"button": "Contáctanos"
 				}
+			}
+		},
+		"start": {
+			"heading": "¡Inicia un <mark>nuevo proyecto!</mark>",
+			"description": "Cuéntanos sobre tu proyecto y te ayudaremos a hacerlo realidad.",
+			"placeholders": {
+				"name": "Mi proyecto",
+				"description": "Descripción asombrosa de mi proyecto...",
+				"plan": "Selecciona un plan"
+			},
+			"form": {
+				"project-info": "Información del proyecto",
+				"name": "Nombre del proyecto",
+				"plan": "Plan",
+				"description": "Descripción",
+				"contact": "Información de contacto",
+				"email": "Correo electrónico",
+				"phone": "Teléfono",
+				"submit": "¡Iniciar mi proyecto!"
 			}
 		}
 	},
@@ -248,6 +271,11 @@
 			"working": "Trabajando",
 			"offline": "Desconectado",
 			"vacations": "Vacaciones"
+		},
+		"plans": {
+			"star": "Estrella",
+			"star-plus": "Estrella Plus",
+			"big-star": "Gran Estrella"
 		}
 	}
 }

@@ -13,10 +13,14 @@ import {
 } from "hugeicons-react";
 import { useFormatter, useTranslations } from "next-intl";
 
-const mainFeatures: Record<Plan, Feature[]> = {
+const mainFeatures: Record<Plan, (Feature | "free-maintenance")[]> = {
 	star: ["free-maintenance", "basic-support"],
 	"star-plus": ["free-maintenance", "e-commerce-integration", "brand-design"],
-	"big-star": ["free-maintenance", "dedicated-support", "mobile-app-development"],
+	"big-star": [
+		"free-maintenance",
+		"dedicated-support",
+		"mobile-app-development",
+	],
 };
 
 const featuresIcon: Record<string, React.ReactNode> = {
@@ -37,7 +41,7 @@ export function ProjectPreview({
 	description: string;
 	plan: Plan;
 }) {
-	const t = useTranslations("content.start.project-preview");
+	const t = useTranslations("content.start.placeholders");
 	const tPlans = useTranslations("common.plans");
 	const tFeatures = useTranslations("content.pricing.features");
 

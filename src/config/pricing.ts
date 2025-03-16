@@ -17,7 +17,6 @@ export const features = {
 	"mobile-app-development": ["big-star"],
 	"cloud-integration": ["big-star"],
 	"security-audit": ["big-star"],
-	"free-maintenance": [],
 };
 
 export const mainFeatures = {

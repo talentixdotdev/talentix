@@ -247,9 +247,22 @@
 			}
 		},
 		"start": {
-			"project-preview": {
+			"heading": "Start a <mark>new project!</mark>",
+			"description": "Tell us about your project and we will help you bring it to life.",
+			"placeholders": {
 				"name": "My project",
-				"description": "No description yet."
+				"description": "My awesome project.",
+				"plan": "Select a plan"
+			},
+			"form": {
+				"project-info": "Project Information",
+				"name": "Project Name",
+				"plan": "Plan",
+				"description": "Description",
+				"contact": "Contact Information",
+				"email": "Email",
+				"phone": "Phone",
+				"submit": "Start {name}!"
 			}
 		}
 	},
