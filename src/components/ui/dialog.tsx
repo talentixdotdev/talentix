@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import { IconX } from "justd-icons"
 import type {
   ButtonProps as ButtonPrimitiveProps,
   DialogProps,
@@ -18,6 +17,7 @@ import { tv } from "tailwind-variants"
 
 import { Button, type ButtonProps } from "./button"
 import { useMediaQuery } from "./primitive"
+import { Cancel01Icon } from "hugeicons-react"
 
 const dialogStyles = tv({
   slots: {
@@ -146,7 +146,9 @@ const Footer = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) =
 }
 
 const Close = ({ className, appearance = "outline", ...props }: ButtonProps) => {
+  // biome-ignore lint/style/noNonNullAssertion: React.useContext will always return a value.
   const state = React.useContext(OverlayTriggerStateContext)!
+  
   return (
     <Button
       className={className}
@@ -180,7 +182,7 @@ const CloseIndicator = ({ className, ...props }: CloseButtonIndicatorProps) => {
       onPress={props.close}
       className={closeIndicator({ className })}
     >
-      <IconX className="size-4" />
+      <Cancel01Icon className="size-4" />
     </ButtonPrimitive>
   ) : null
 }

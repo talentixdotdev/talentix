@@ -12,7 +12,7 @@ interface BaseLayoutProps {
 const inter = Inter();
 
 const BaseLayout: React.FC<BaseLayoutProps> = async ({ children, locale }) => {
-	const messages = await getMessages();
+	const messages = await getMessages();	
 
 	return (
 		<html lang={locale} suppressHydrationWarning>

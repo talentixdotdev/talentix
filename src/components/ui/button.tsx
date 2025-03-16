@@ -49,12 +49,14 @@ const buttonStyles = tv(
 					"border-border text-fg [--button-icon:theme(colors.muted.fg)]",
 					"hover:[--button-icon:theme(colors.fg)] hover:bg-secondary/90",
 					"active:bg-secondary/90 active:[--button-icon:theme(colors.fg)]",
+					"transition-colors ease-in-out duration-200",
 				],
 				plain: [
 					"border-transparent text-fg [--button-icon:theme(colors.muted.fg)]",
 					"pressed:bg-secondary/90",
 					"active:[--button-icon:theme(colors.fg)] active:bg-secondary/90",
 					"hover:[--button-icon:theme(colors.fg)] hover:bg-secondary/90",
+					"transition-colors ease-in-out duration-200",
 				],
 			},
 			size: {
@@ -70,7 +72,7 @@ const buttonStyles = tv(
 			},
 			shape: {
 				square:
-					"rounded-lg before:rounded-[calc(theme(borderRadius.lg)-1px)] after:rounded-[calc(theme(borderRadius.lg)-1px)] dark:after:rounded-lg",
+					"rounded-xl before:rounded-[calc(theme(borderRadius.lg)-1px)] after:rounded-[calc(theme(borderRadius.lg)-1px)] dark:after:rounded-lg",
 				circle:
 					"rounded-[9999px] before:rounded-[9998px] after:rounded-[9998px] dark:after:rounded-[9999px]",
 			},

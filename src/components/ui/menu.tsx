@@ -3,7 +3,6 @@
 import * as React from "react"
 
 import { cn } from "@/utils/classes"
-import { IconBulletFill, IconCheck, IconChevronLgRight } from "justd-icons"
 import type {
   MenuItemProps as MenuItemPrimitiveProps,
   MenuProps as MenuPrimitiveProps,
@@ -31,6 +30,7 @@ import { tv } from "tailwind-variants"
 import { DropdownItemDetails, dropdownItemStyles, dropdownSectionStyles } from "./dropdown"
 import { Keyboard } from "./keyboard"
 import { Popover } from "./popover"
+import { ArrowRight01Icon, CheckListIcon, Menu01Icon } from "hugeicons-react"
 
 interface MenuContextProps {
   respectScreen: boolean
@@ -136,7 +136,7 @@ const Item = ({ className, isDanger = false, children, ...props }: MenuItemProps
       {(values) => (
         <>
           {typeof children === "function" ? children(values) : children}
-          {values.hasSubmenu && <IconChevronLgRight className="gpfw ml-auto size-3.5" />}
+          {values.hasSubmenu && <ArrowRight01Icon className="gpfw ml-auto size-3.5" />}
         </>
       )}
     </MenuItem>
@@ -169,7 +169,7 @@ const Checkbox = ({ className, children, ...props }: MenuItemProps) => (
         {typeof children === "function" ? children(values) : children}
         {values.isSelected && (
           <span className="absolute right-2 flex size-4 shrink-0 items-center animate-in justify-center">
-            <IconCheck />
+            <CheckListIcon />
           </span>
         )}
       </>
@@ -188,7 +188,7 @@ const Radio = ({ className, children, ...props }: MenuItemProps) => (
             data-slot="menu-radio"
             className="absolute right-3 flex items-center animate-in justify-center"
           >
-            <IconBulletFill />
+            <Menu01Icon />
           </span>
         )}
       </>

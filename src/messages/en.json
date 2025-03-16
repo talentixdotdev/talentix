@@ -1,18 +1,268 @@
 {
 	"content": {
-		"navbar": {
-			"items": {
-				"talents": "For Talents",
-				"companies": "For Companies",
-				"freelancers": "Freelancers",
-				"blog": "Blog",
-				"pricing": "Pricing",
-				"support": "Support"
+		"layout": {
+			"navbar": {
+				"items": {
+					"talents": "Talents",
+					"projects": "Projects",
+					"pricing": "Pricing",
+					"support": "Help"
+				},
+				"buttons": {
+					"getting-start": "Start a project",
+					"book-call": "Book a call"
+				}
 			},
-			"buttons": {
-				"getting-start": "Start a project",
-				"book-call": "Book a call"
+			"footer": {
+				"titles": {
+					"company": "Company",
+					"resources": "Resources",
+					"legals": "Legals"
+				},
+				"items": {
+					"about": "About",
+					"blog": "Blog",
+					"contact": "Contact",
+					"terms": "Terms of Service",
+					"privacy": "Privacy Policy",
+					"cookies": "Cookie Policy",
+					"pricing": "Pricing",
+					"faq": "FAQ",
+					"status": "Status",
+					"help": "Help",
+					"talents": "Talents"
+				}
 			}
+		},
+		"landing": {
+			"sections": {
+				"hero": {
+					"chips": {
+						"launch_discount": "💸 Unlock <strong>%10 of discount</strong> for we launch!"
+					},
+					"heading": "Get the <mark>best talent</mark> to power your business",
+					"buttons": {
+						"getting-start": "Start a project",
+						"book-call": "Book a call"
+					}
+				},
+				"services": {
+					"heading": "Our services",
+					"description": "We provide the best talents to help you with your projects. From design to development, we have you covered.",
+					"items": {
+						"web-development": {
+							"heading": "Web Development",
+							"description": "Stunning, high-performance websites and web apps designed to elevate your brand and drive growth."
+						},
+						"integrations-and-social-networks": {
+							"heading": "Integrations & Socials Networks",
+							"description": "Seamless integrations with top-tier services to optimize your workflow and supercharge your business."
+						},
+						"mobile-development": {
+							"heading": "Mobile Development",
+							"description": "Powerful, user-friendly mobile apps crafted to enhance engagement and accelerate your success."
+						},
+						"ai-integrations": {
+							"heading": "AI Integrations",
+							"description": "Harness the power of AI to automate, optimize, and revolutionize your digital presence."
+						}
+					}
+				},
+				"projects": {
+					"heading": "Projects",
+					"description": "Discover our innovative projects—where cutting-edge technology meets creativity to deliver outstanding results.",
+					"see-all": "See all projects"
+				},
+				"reviews": {
+					"jack": {
+						"name": "Jack",
+						"username": "@jack",
+						"body": "I've never seen anything like this before. It's amazing. I love it."
+					},
+					"jill": {
+						"name": "Jill",
+						"username": "@jill",
+						"body": "I don't know what to say. I'm speechless. This is amazing."
+					},
+					"john": {
+						"name": "John",
+						"username": "@john",
+						"body": "I'm at a loss for words. This is amazing. I love it."
+					},
+					"jane": {
+						"name": "Jane",
+						"username": "@jane",
+						"body": "I'm at a loss for words. This is amazing. I love it."
+					},
+					"jenny": {
+						"name": "Jenny",
+						"username": "@jenny",
+						"body": "I'm at a loss for words. This is amazing. I love it."
+					},
+					"james": {
+						"name": "James",
+						"username": "@james",
+						"body": "I'm at a loss for words. This is amazing. I love it."
+					}
+				},
+				"call-to-action": {
+					"heading": "Don't wash time, Start a project <effect>Fast!</effect>",
+					"button": "Start now"
+				}
+			}
+		},
+		"pricing": {
+			"heading": "Pricing",
+			"description": "Choose the plan that best fits your needs. If you need a custom plan, don't hesitate to contact us.",
+			"feature": "Features",
+			"plans": {
+				"star": {
+					"name": "Star",
+					"description": "For small projects like content pages, social network design, and more."
+				},
+				"star-plus": {
+					"name": "Star Plus",
+					"description": "Ideal for growing businesses that need more functionality and support."
+				},
+				"big-star": {
+					"name": "Big Star",
+					"description": "For large projects requiring advanced solutions and scalability."
+				}
+			},
+			"features": {
+				"heading": "Compare features",
+				"description": "Compare the features to choose the best plan for your needs.",
+				"everything-before": {
+					"heading": "Everything before",
+					"description": "Includes all features from previous plans."
+				},
+				"brand-design": {
+					"heading": "Brand Design",
+					"description": "Create a unique and memorable brand identity."
+				},
+				"content-web-page": {
+					"heading": "Content Web Page",
+					"description": "Design and develop content-rich web pages."
+				},
+				"social-networks-design": {
+					"heading": "Social Networks Design",
+					"description": "Design engaging social media profiles and posts."
+				},
+				"maintenance": {
+					"heading": "Maintenance",
+					"description": "We provide maintenance and updates to your service."
+				},
+				"basic-support": {
+					"heading": "Basic Support",
+					"description": "Receive basic support for your projects."
+				},
+				"custom-web-design": {
+					"heading": "Custom Web Design",
+					"description": "Tailored web design to meet your specific needs."
+				},
+				"ui-ux-improvement": {
+					"heading": "UI/UX Improvement",
+					"description": "Enhance the user interface and user experience."
+				},
+				"seo-optimization": {
+					"heading": "SEO Optimization",
+					"description": "Improve your website's search engine ranking."
+				},
+				"e-commerce-integration": {
+					"heading": "E-commerce Integration",
+					"description": "Integrate e-commerce functionality into your site."
+				},
+				"dedicated-support": {
+					"heading": "Dedicated Support",
+					"description": "Receive dedicated support for your projects."
+				},
+				"custom-software-development": {
+					"heading": "Custom Software Development",
+					"description": "Develop custom software solutions."
+				},
+				"advanced-ui-ux": {
+					"heading": "Advanced UI/UX",
+					"description": "Advanced improvements to UI and UX."
+				},
+				"mobile-app-development": {
+					"heading": "Mobile App Development",
+					"description": "Develop powerful mobile applications."
+				},
+				"cloud-integration": {
+					"heading": "Cloud Integration",
+					"description": "Integrate cloud services into your solutions."
+				},
+				"security-audit": {
+					"heading": "Security Audit",
+					"description": "Conduct a thorough security audit."
+				},
+				"free-maintenance": {
+					"heading": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} =12 {1 year} other {# months}}",
+					"description": "After that, it will cost {price} per month."
+				}
+			},
+			"values": {
+				"free-maintenance": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} other {# months}}. After that, it will cost {price} per month."
+			},
+			"start-now": "Start now",
+			"contact-us": "Contact us"
+		},
+		"talents": {
+			"sections": {
+				"hero": {
+					"heading": "Meet our <mark>talents</mark>",
+					"description": "Our talented team of passionate developers, designers, and marketing engineers is ready to bring your projects to life. With creativity and expertise, they’ll help you turn ideas into reality."
+				},
+				"members": {
+					"daniel": {
+						"name": "Daniel Rosario",
+						"role": "Full-stack Developer"
+					},
+					"jarel": {
+						"name": "Jarel Feliz",
+						"role": "Professional Designer"
+					},
+					"katia": {
+						"name": "Katia Pujols",
+						"role": "Front-end Developer"
+					},
+					"joshua": {
+						"name": "Joshua Williams",
+						"role": "Marketing Engineer"
+					},
+					"kendry": {
+						"name": "Kendry De La Cruz",
+						"role": "Marketing Engineer"
+					},
+					"enmanuel": {
+						"name": "Enmanuel Marte",
+						"role": "Cyber Security Engineer"
+					}
+				},
+				"join": {
+					"heading": "Do you want to <mark>join our team</mark>?",
+					"description": "We are always looking for new talents.",
+					"button": "Contact us"
+				}
+			}
+		},
+		"start": {
+			"project-preview": {
+				"name": "My project",
+				"description": "No description yet."
+			}
+		}
+	},
+	"common": {
+		"status": {
+			"working": "Working",
+			"offline": "Offline",
+			"vacations": "Vacations"
+		},
+		"plans": {
+			"star": "Star",
+			"star-plus": "Star Plus",
+			"big-star": "Big Star"
 		}
 	}
 }

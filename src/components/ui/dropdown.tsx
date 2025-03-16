@@ -3,7 +3,6 @@
 import * as React from "react"
 
 import { cn } from "@/utils/classes"
-import { IconCheck } from "justd-icons"
 import {
   Collection,
   composeRenderProps,
@@ -16,6 +15,7 @@ import {
   type TextProps
 } from "react-aria-components"
 import { tv } from "tailwind-variants"
+import { CheckListIcon, Tick02Icon } from "hugeicons-react"
 
 const dropdownItemStyles = tv({
   base: [
@@ -92,7 +92,7 @@ const DropdownItem = ({ className, ...props }: ListBoxItemProps) => {
 
           {isSelected && (
             <span className="absolute right-2 top-3 lg:top-2.5">
-              <IconCheck />
+              <Tick02Icon size={16} />
             </span>
           )}
         </>

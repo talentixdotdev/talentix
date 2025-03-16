@@ -2,7 +2,6 @@
 
 import * as React from "react"
 
-import { IconTriangleExclamation } from "justd-icons"
 import { motion } from "motion/react"
 import {
   Meter as MeterPrimitive,
@@ -11,6 +10,7 @@ import {
 
 import { Label } from "./field"
 import { ctr } from "./primitive"
+import { Alert02Icon } from "hugeicons-react"
 
 export interface MeterProps extends MeterPrimitiveProps {
   label?: string
@@ -27,12 +27,12 @@ const Meter = ({ label, ...props }: MeterProps) => {
               className={`text-sm tabular-nums ${percentage >= 80 ? "text-danger" : "text-muted-fg"}`}
             >
               {percentage >= 80 && (
-                <IconTriangleExclamation
+                <Alert02Icon
                   aria-label="Alert"
                   className="inline-block fill-danger/20 text-danger size-4 align-text-bottom"
                 />
               )}
-              {" " + valueText}
+              {" "}{valueText}
             </span>
           </div>
           <div className="relative h-2 min-w-64 rounded-full bg-muted outline outline-1 -outline-offset-1 outline-transparent">

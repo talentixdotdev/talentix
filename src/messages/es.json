@@ -1,1 +1,253 @@
-{}
+{
+	"content": {
+		"layout": {
+			"navbar": {
+				"items": {
+					"talents": "Talentos",
+					"projects": "Proyectos",
+					"pricing": "Precios",
+					"support": "Ayuda"
+				},
+				"buttons": {
+					"getting-start": "Iniciar un proyecto",
+					"book-call": "Reservar una llamada"
+				}
+			},
+			"footer": {
+				"titles": {
+					"company": "Compañía",
+					"resources": "Recursos",
+					"legals": "Legales"
+				},
+				"items": {
+					"about": "Acerca de",
+					"blog": "Blog",
+					"contact": "Contacto",
+					"terms": "Términos de Servicio",
+					"privacy": "Política de Privacidad",
+					"cookies": "Política de Cookies",
+					"pricing": "Precios",
+					"faq": "Preguntas Frecuentes",
+					"status": "Estado",
+					"help": "Ayuda",
+					"talents": "Talentos"
+				}
+			}
+		},
+		"landing": {
+			"sections": {
+				"hero": {
+					"chips": {
+						"launch_discount": "💸 ¡Desbloquea <strong>un 10% de descuento</strong> por nuestro lanzamiento!"
+					},
+					"heading": "Consigue el <mark>mejor talento</mark> para impulsar tu negocio",
+					"buttons": {
+						"getting-start": "Iniciar un proyecto",
+						"book-call": "Reservar una llamada"
+					}
+				},
+				"services": {
+					"heading": "Nuestros servicios",
+					"description": "Proporcionamos los mejores talentos para ayudarte con tus proyectos. Desde diseño hasta desarrollo, te tenemos cubierto.",
+					"items": {
+						"web-development": {
+							"heading": "Desarrollo Web",
+							"description": "Sitios web y aplicaciones web impresionantes y de alto rendimiento diseñados para elevar tu marca y fomentar el crecimiento."
+						},
+						"integrations-and-social-networks": {
+							"heading": "Integraciones y Redes Sociales",
+							"description": "Integraciones sin problemas con servicios de primer nivel para optimizar tu flujo de trabajo y potenciar tu negocio."
+						},
+						"mobile-development": {
+							"heading": "Desarrollo Móvil",
+							"description": "Aplicaciones móviles potentes y fáciles de usar diseñadas para mejorar el compromiso y acelerar tu éxito."
+						},
+						"ai-integrations": {
+							"heading": "Integraciones de IA",
+							"description": "Aprovecha el poder de la IA para automatizar, optimizar y revolucionar tu presencia digital."
+						}
+					}
+				},
+				"projects": {
+					"heading": "Proyectos",
+					"description": "Descubre nuestros proyectos innovadores, donde la tecnología de vanguardia se encuentra con la creatividad para ofrecer resultados excepcionales.",
+					"see-all": "Ver todos los proyectos"
+				},
+				"reviews": {
+					"jack": {
+						"name": "Jack",
+						"username": "@jack",
+						"body": "Nunca he visto nada como esto antes. Es increíble. Me encanta."
+					},
+					"jill": {
+						"name": "Jill",
+						"username": "@jill",
+						"body": "No sé qué decir. Estoy sin palabras. Esto es increíble."
+					},
+					"john": {
+						"name": "John",
+						"username": "@john",
+						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					},
+					"jane": {
+						"name": "Jane",
+						"username": "@jane",
+						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					},
+					"jenny": {
+						"name": "Jenny",
+						"username": "@jenny",
+						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					},
+					"james": {
+						"name": "James",
+						"username": "@james",
+						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					}
+				},
+				"call-to-action": {
+					"heading": "No pierdas tiempo, Inicia un proyecto <effect>¡Rápido!</effect>",
+					"button": "Comienza ahora"
+				}
+			}
+		},
+		"pricing": {
+			"heading": "Precios",
+			"description": "Elige el plan que mejor se adapte a tus necesidades. Si necesitas un plan personalizado, no dudes en contactarnos.",
+			"feature": "Características",
+			"plans": {
+				"star": {
+					"name": "Estrella",
+					"description": "Para proyectos pequeños como páginas de contenido, diseño de redes sociales y más."
+				},
+				"star-plus": {
+					"name": "Estrella Plus",
+					"description": "Ideal para negocios en crecimiento que necesitan más funcionalidad y soporte."
+				},
+				"big-star": {
+					"name": "Gran Estrella",
+					"description": "Para grandes proyectos que requieren soluciones avanzadas y escalabilidad."
+				}
+			},
+			"features": {
+				"heading": "Comparar características",
+				"description": "Compara las características para elegir el plan que mejor se adapte a tus necesidades.",
+				"everything-before": {
+					"heading": "Todo lo anterior",
+					"description": "Incluye todas las características de los planes anteriores."
+				},
+				"brand-design": {
+					"heading": "Diseño de Marca",
+					"description": "Crea una identidad de marca única y memorable."
+				},
+				"content-web-page": {
+					"heading": "Página Web de Contenido",
+					"description": "Diseña y desarrolla páginas web ricas en contenido."
+				},
+				"social-networks-design": {
+					"heading": "Diseño de Redes Sociales",
+					"description": "Diseña perfiles y publicaciones atractivas en redes sociales."
+				},
+				"maintenance": {
+					"heading": "Mantenimiento",
+					"description": "Proporcionamos mantenimiento y actualizaciones a tu servicio."
+				},
+				"basic-support": {
+					"heading": "Soporte Básico",
+					"description": "Recibe soporte básico para tus proyectos."
+				},
+				"custom-web-design": {
+					"heading": "Diseño Web Personalizado",
+					"description": "Diseño web adaptado a tus necesidades específicas."
+				},
+				"ui-ux-improvement": {
+					"heading": "Mejora de UI/UX",
+					"description": "Mejora la interfaz de usuario y la experiencia del usuario."
+				},
+				"seo-optimization": {
+					"heading": "Optimización SEO",
+					"description": "Mejora el ranking de tu sitio web en los motores de búsqueda."
+				},
+				"e-commerce-integration": {
+					"heading": "Integración de Comercio Electrónico",
+					"description": "Integra funcionalidad de comercio electrónico en tu sitio."
+				},
+				"dedicated-support": {
+					"heading": "Soporte Dedicado",
+					"description": "Recibe soporte dedicado para tus proyectos."
+				},
+				"custom-software-development": {
+					"heading": "Desarrollo de Software Personalizado",
+					"description": "Desarrolla soluciones de software personalizadas."
+				},
+				"advanced-ui-ux": {
+					"heading": "UI/UX Avanzado",
+					"description": "Mejoras avanzadas en UI y UX."
+				},
+				"mobile-app-development": {
+					"heading": "Desarrollo de Aplicaciones Móviles",
+					"description": "Desarrolla aplicaciones móviles potentes."
+				},
+				"cloud-integration": {
+					"heading": "Integración en la Nube",
+					"description": "Integra servicios en la nube en tus soluciones."
+				},
+				"security-audit": {
+					"heading": "Auditoría de Seguridad",
+					"description": "Realiza una auditoría de seguridad exhaustiva."
+				}
+			},
+			"values": {
+				"free-maintenance": "Mantenimiento gratuito por {months, plural, =0 {sin mantenimiento gratuito} =1 {un mes} other {# meses}}. Después de eso, costará {price} por mes."
+			},
+			"start-now": "Comienza ahora",
+			"contact-us": "Contáctanos"
+		},
+		"talents": {
+			"sections": {
+				"hero": {
+					"heading": "Conoce a nuestros <mark>talentos</mark>",
+					"description": "Nuestro talentoso equipo de apasionados desarrolladores, diseñadores e ingenieros de marketing está listo para dar vida a tus proyectos. Con creatividad y experiencia, te ayudarán a convertir ideas en realidad."
+				},
+				"members": {
+					"daniel": {
+						"name": "Daniel Rosario",
+						"role": "Desarrollador Full-stack"
+					},
+					"jarel": {
+						"name": "Jarel Feliz",
+						"role": "Diseñador Profesional"
+					},
+					"katia": {
+						"name": "Katia Pujols",
+						"role": "Desarrolladora Front-end"
+					},
+					"joshua": {
+						"name": "Joshua Williams",
+						"role": "Ingeniero de Marketing"
+					},
+					"kendry": {
+						"name": "Kendry De La Cruz",
+						"role": "Ingeniero de Marketing"
+					},
+					"enmanuel": {
+						"name": "Enmanuel Marte",
+						"role": "Ingeniero de Ciberseguridad"
+					}
+				},
+				"join": {
+					"heading": "¿Quieres <mark>unirte a nuestro equipo</mark>?",
+					"description": "Siempre estamos buscando nuevos talentos.",
+					"button": "Contáctenos"
+				}
+			}
+		}
+	},
+	"common": {
+		"status": {
+			"working": "Trabajando",
+			"offline": "Desconectado",
+			"vacations": "Vacaciones"
+		}
+	}
+}

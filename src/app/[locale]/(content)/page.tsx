@@ -1,16 +1,33 @@
-import { Hero } from "@/components/landing/hero";
-import { Presume } from "@/components/landing/presume";
+import { CallToAction } from "@/components/landing/sections/call-to-action";
+import { Hero } from "@/components/landing/sections/hero";
+import { PricingSection } from "@/components/landing/sections/pricing";
+import { Projects } from "@/components/landing/sections/projects";
+import { Reviews } from "@/components/landing/sections/reviews";
+import { Services } from "@/components/landing/sections/services";
+import { setRequestLocale } from "next-intl/server";
+import { use } from "react";
 
-export const dynamic = "force-static";
+const HomePage: React.FC<{
+	params: Promise<{
+		locale: string;
+	}>
+}> = ({ params }) => {
+	const { locale } = use(params);
+	setRequestLocale(locale)
 
-const HomePage: React.FC = () => {
 	return (
-		<div
-			className={"flex flex-col items-center min-h-screen sm:gap-y-20 pb-20"}
+		<main
+			className={
+				"flex flex-col items-center max-w-screen-lg w-full mx-auto min-h-screen sm:gap-y-20"
+			}
 		>
 			<Hero />
-			<Presume />
-		</div>
+			<Services />
+			<Projects />
+			<Reviews />
+			<PricingSection />
+			<CallToAction />
+		</main>
 	);
 };
 

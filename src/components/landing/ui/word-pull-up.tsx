@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/classes";
-import { type Variants, motion, useInView } from "framer-motion";
+import { motion, type Variants, useInView } from "motion/react";
 import { useRef } from "react";
 
 interface WordPullUpProps {

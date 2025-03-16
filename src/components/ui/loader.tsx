@@ -3,10 +3,10 @@
 import * as React from "react"
 
 import { cn } from "@/utils/classes"
-import { IconLoader } from "justd-icons"
 import { ProgressBar } from "react-aria-components"
 import type { VariantProps } from "tailwind-variants"
 import { tv } from "tailwind-variants"
+import { Loading02Icon } from "hugeicons-react"
 
 const loaderStyles = tv({
   base: "relative",
@@ -135,7 +135,7 @@ const Bars = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
     </rect>
   </svg>
 )
-const Ring = (props: React.SVGProps<SVGSVGElement>) => <IconLoader {...props} />
+const Ring = (props: React.SVGProps<SVGSVGElement>) => <Loading02Icon {...props} />
 const Spin = ({ className, ...props }: React.SVGProps<SVGSVGElement>) => (
   <svg className={cn("size-4", className)} data-slot="icon" viewBox="0 0 2400 2400" {...props}>
     <g strokeWidth="200" strokeLinecap="round" fill="none">

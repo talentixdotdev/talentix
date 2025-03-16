@@ -1,6 +1,7 @@
 import { BaseLayout } from "@/components/layouts/base-layout";
 import { isValidLocale } from "@/utils/internalization";
 import type { Metadata } from "next";
+import {setRequestLocale} from 'next-intl/server';
 import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
@@ -20,7 +21,9 @@ const LocaleLayout: React.FC<
 		notFound();
 	}
 
+	setRequestLocale(locale)
 	return <BaseLayout locale={locale}>{children}</BaseLayout>;
 };
+
 
 export default LocaleLayout;

@@ -2,12 +2,6 @@
 
 import * as React from "react";
 
-import {
-	IconChevronDown,
-	IconChevronRight,
-	IconHamburger,
-	IconSidebarFill,
-} from "justd-icons";
 import type { DisclosureProps, LinkProps } from "react-aria-components";
 import {
 	Disclosure,
@@ -21,6 +15,7 @@ import { Button, ButtonPrimitive } from "./button";
 import { cn, useMediaQuery } from "./primitive";
 import { Sheet } from "./sheet";
 import { Tooltip } from "./tooltip";
+import { ArrowDown01Icon, ArrowRight01Icon, Menu03Icon, SidebarLeftIcon } from "hugeicons-react";
 
 type SidebarContextProps = {
 	state: "expanded" | "collapsed";
@@ -390,8 +385,8 @@ const Trigger = ({
 			}}
 			{...props}
 		>
-			<IconSidebarFill className="md:inline hidden" />
-			<IconHamburger className="md:hidden inline" />
+			<SidebarLeftIcon className="md:inline hidden" />
+			<Menu03Icon className="md:hidden inline" />
 			<span className="sr-only">Toggle Sidebar</span>
 		</Button>
 	);
@@ -514,8 +509,8 @@ const Section = ({
 										{Icon && <Icon data-slot="icon" />}
 										{title}
 									</span>
-									{Icon && <IconChevronRight className="idctr" />}
-									{!Icon && <IconChevronDown className="idctr" />}
+									{Icon && <ArrowRight01Icon className="idctr" />}
+									{!Icon && <ArrowDown01Icon className="idctr" />}
 								</ButtonPrimitive>
 							) : (
 								<h4 className="text-sm text-muted-fg px-3 py-2">{title}</h4>

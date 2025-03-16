@@ -1,1 +1,54 @@
-{}
+{
+	"content": {
+		"layout": {
+			"navbar": {
+				"items": {
+					"talents": "Talentos",
+					"projects": "Projetos",
+					"pricing": "Preços",
+					"support": "Ajuda"
+				},
+				"buttons": {
+					"getting-start": "Iniciar um projeto",
+					"book-call": "Agendar uma chamada"
+				}
+			},
+			"footer": {
+				"titles": {
+					"company": "Empresa",
+					"resources": "Recursos",
+					"legals": "Legais"
+				},
+				"items": {
+					"about": "Sobre",
+					"blog": "Blog",
+					"contact": "Contato",
+					"terms": "Termos de Serviço",
+					"privacy": "Política de Privacidade",
+					"cookies": "Política de Cookies",
+					"pricing": "Preços",
+					"faq": "Perguntas Frequentes",
+					"status": "Status",
+					"help": "Ajuda",
+					"careers": "Carreiras"
+				}
+			}
+		},
+		"sections": {
+			"hero": {
+				"chips": {
+					"launch_discount": "💸 Desbloqueie <strong>10% de desconto</strong> pelo nosso lançamento!"
+				},
+				"heading": "Encontre o <mark>melhor talento</mark> <br></br> para o seu projeto",
+				"buttons": {
+					"getting-start": "Iniciar um projeto",
+					"book-call": "Agendar uma chamada"
+				}
+			},
+			"call-to-action": {
+				"heading": "Não perca tempo, <br></br> Inicie um projeto <effect>Rápido!</effect>",
+				"button": "Comece agora"
+			}
+		}
+	}
+}
