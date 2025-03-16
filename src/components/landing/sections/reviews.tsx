@@ -1,28 +1,52 @@
 import { cn } from "@/utils/classes";
 import { Marquee } from "../ui/marquee";
 import { AnimatedSection } from "../ui/animated-section";
-import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-const ReviewCard = ({
-	img,
-	name,
-	username,
-	body,
-}: {
+interface Review {
 	img: string;
 	name: string;
 	username: string;
 	body: string;
-}) => {
+}
+
+const reviews: Review[] = [
+	{
+		img: "https://i.imgur.com/AW4ahz5.jpeg",
+		name: "Juan Pujols",
+		username: "@juanpujols",
+		body: "Me hicieron una página personal y estoy muy feliz con el resultado. Excelente trabajo!",
+	},
+	{
+		img: "https://avatar.vercel.sh/davidrosario",
+		name: "David Rosario",
+		username: "@skydreamrealty",
+		body: "Quedé muy contento con la página que hicieron para Sky Dream Realty. 100% recomendado!",
+	},
+	{
+		img: "https://i.imgur.com/tMY0tAy.png",
+		name: "Idalenny Ramos",
+		username: "@idalennyramos",
+		body: "Gracias a la página ahora puedo vender ropa de Shein con mayor facilidad. Ha sido de gran ayuda!",
+	},
+	{
+		img: "https://avatar.vercel.sh/josegonzalez",
+		name: "José González",
+		username: "@madrearafaelaybarra",
+		body: "La página para el Politécnico Madre Rafaela Ybarra superó mis expectativas. Increíble trabajo!",
+	},
+];
+
+const ReviewCard: React.FC<Review> = ({ img, name, username, body }) => {
 	return (
 		<figure
 			className={cn(
 				"relative h-full w-64 cursor-pointer overflow-hidden rounded-xl p-4",
-				"border border-dashed border-muted bg-bg shadow-lg",
+				"border border-dashed border-muted bg-bg shadow-lg"
 			)}
 		>
 			<div className="flex flex-row items-center gap-2">
-				<img className="rounded-full" width="32" height="32" alt="" src={img} />
+				<img className="rounded-full" width={32} height={32} alt={name} src={img} />
 				<div className="flex flex-col">
 					<figcaption className="text-sm font-medium dark:text-white">
 						{name}
@@ -35,46 +59,21 @@ const ReviewCard = ({
 	);
 };
 
-export function Reviews() {
-	const t = useTranslations("content.landing.sections.reviews");
-	const reviewsKey = [
-		"jack",
-		"jill",
-		"john",
-		"jane",
-		"jenny",
-		"james",
-	] as const;
-
-	const firstRow = reviewsKey.slice(0, reviewsKey.length / 2);
-	const secondRow = reviewsKey.slice(reviewsKey.length / 2);
-
+export const Reviews: React.FC = () => {
 	return (
 		<AnimatedSection className="relative overflow-hidden py-0">
 			<Marquee pauseOnHover className="[--duration:20s]">
-				{firstRow.map((review) => (
-					<ReviewCard
-						key={review}
-						name={t(`${review}.name`)}
-						username={t(`${review}.username`)}
-						body={t(`${review}.body`)}
-						img={`https://avatar.vercel.sh/${review}`}
-					/>
+				{reviews.map((review, index) => (
+					<ReviewCard key={index} {...review} />
 				))}
 			</Marquee>
 			<Marquee reverse pauseOnHover className="[--duration:20s]">
-				{firstRow.map((review) => (
-					<ReviewCard
-						key={review}
-						name={t(`${review}.name`)}
-						username={t(`${review}.username`)}
-						body={t(`${review}.body`)}
-						img={`https://avatar.vercel.sh/${review}`}
-					/>
+				{reviews.map((review, index) => (
+					<ReviewCard key={`reverse-${index}`} {...review} />
 				))}
 			</Marquee>
 			<div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-bg" />
 			<div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-bg" />
 		</AnimatedSection>
 	);
-}
+};
