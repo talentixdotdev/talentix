@@ -1,4 +1,8 @@
 {
+	"metadata": {
+		"title": "Taletix - Plataforma de Freelancers",
+		"description": "Conectando talentos y proyectos para impulsar tu negocio"
+	},
 	"content": {
 		"layout": {
 			"navbar": {
