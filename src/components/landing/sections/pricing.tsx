@@ -23,21 +23,24 @@ export const PricingCards: React.FC = () => {
 						maxPrice={plansPrice[plan].max}
 					/>
 					<Pricing.Features>
-						{Object.keys(mainFeatures).map((feature) => (
-							<Pricing.Feature
-								key={feature}
-								included={features[feature as Feature].includes(plan)}
-							>
-								{t(`features.${feature as Feature}.heading`)}
-							</Pricing.Feature>
-						))}
+						{Object.keys(mainFeatures).map((feature) => {
+							if (plan === "big-star" && !features[feature as Feature].includes(plan)) {
+								return;
+							}
+
+							return (
+								<Pricing.Feature
+									key={feature}
+									included={features[feature as Feature].includes(plan)}
+								>
+									{t(`features.${feature as Feature}.heading`)}
+								</Pricing.Feature>
+							);
+						})}
 					</Pricing.Features>
 					<Pricing.Footer>
 						<Link href={`/start?plan=${plan}`}>
-							<Button
-								className="w-full"
-								appearance="outline"
-							>
+							<Button className="w-full" appearance="outline">
 								{plan === "big-star" ? t("contact-us") : t("start-now")}
 							</Button>
 						</Link>
