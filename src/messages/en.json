@@ -1,4 +1,8 @@
 {
+	"metadata": {
+		"title": "Taletix - Get the best talent to boost your business",
+		"description": "Connecting talents and projects to boost your business"
+	},
 	"content": {
 		"layout": {
 			"navbar": {
@@ -6,7 +10,7 @@
 					"talents": "Talents",
 					"projects": "Projects",
 					"pricing": "Pricing",
-					"support": "Help"
+					"support": "Support"
 				},
 				"buttons": {
 					"getting-start": "Start a project",
@@ -17,7 +21,7 @@
 				"titles": {
 					"company": "Company",
 					"resources": "Resources",
-					"legals": "Legals"
+					"legals": "Legal"
 				},
 				"items": {
 					"about": "About",
@@ -38,9 +42,9 @@
 			"sections": {
 				"hero": {
 					"chips": {
-						"launch_discount": "💸 Unlock <strong>%10 of discount</strong> for we launch!"
+						"launch_discount": "💸 Unlock <strong>10% discount</strong> for our launch!"
 					},
-					"heading": "Get the <mark>best talent</mark> to power your business",
+					"heading": "Get the <mark>best talent</mark> to boost your business",
 					"buttons": {
 						"getting-start": "Start a project",
 						"book-call": "Book a call"
@@ -48,66 +52,56 @@
 				},
 				"services": {
 					"heading": "Our services",
-					"description": "We provide the best talents to help you with your projects. From design to development, we have you covered.",
+					"description": "We provide the best talents to help with your projects. From design to development, we've got you covered.",
 					"items": {
 						"web-development": {
 							"heading": "Web Development",
-							"description": "Stunning, high-performance websites and web apps designed to elevate your brand and drive growth."
+							"description": "Stunning, high-performance websites and web applications designed to elevate your brand and drive growth."
 						},
 						"integrations-and-social-networks": {
-							"heading": "Integrations & Socials Networks",
-							"description": "Seamless integrations with top-tier services to optimize your workflow and supercharge your business."
+							"heading": "Integrations & Social Networks",
+							"description": "Seamless integrations with top-tier services to streamline your workflow and power your business."
 						},
 						"mobile-development": {
 							"heading": "Mobile Development",
-							"description": "Powerful, user-friendly mobile apps crafted to enhance engagement and accelerate your success."
+							"description": "Powerful, user-friendly mobile applications designed to enhance engagement and accelerate your success."
 						},
 						"ai-integrations": {
 							"heading": "AI Integrations",
-							"description": "Harness the power of AI to automate, optimize, and revolutionize your digital presence."
+							"description": "Leverage the power of AI to automate, optimize, and revolutionize your digital presence."
 						}
 					}
 				},
 				"projects": {
 					"heading": "Projects",
-					"description": "Discover our innovative projects—where cutting-edge technology meets creativity to deliver outstanding results.",
+					"description": "Discover our innovative projects, where cutting-edge technology meets creativity to deliver exceptional results.",
 					"see-all": "See all projects"
 				},
 				"reviews": {
-					"jack": {
-						"name": "Jack",
-						"username": "@jack",
-						"body": "I've never seen anything like this before. It's amazing. I love it."
+					"jose": {
+						"name": "José González",
+						"username": "@madrerafaelaybarra",
+						"body": "The page for Politécnico Madre Rafaela Ybarra exceeded my expectations. Amazing work!"
 					},
-					"jill": {
-						"name": "Jill",
-						"username": "@jill",
-						"body": "I don't know what to say. I'm speechless. This is amazing."
+					"idalenny": {
+						"name": "Idalenny Ramos",
+						"username": "@idivas",
+						"body": "Thanks to the page I can now sell Shein clothes more easily. It has been a great help!"
 					},
-					"john": {
-						"name": "John",
-						"username": "@john",
-						"body": "I'm at a loss for words. This is amazing. I love it."
+					"juan": {
+						"name": "Juan Pujols",
+						"username": "@juanpujols",
+						"body": "They made me a personal page and I'm very happy with the result. Excellent work!"
 					},
-					"jane": {
-						"name": "Jane",
-						"username": "@jane",
-						"body": "I'm at a loss for words. This is amazing. I love it."
-					},
-					"jenny": {
-						"name": "Jenny",
-						"username": "@jenny",
-						"body": "I'm at a loss for words. This is amazing. I love it."
-					},
-					"james": {
-						"name": "James",
-						"username": "@james",
-						"body": "I'm at a loss for words. This is amazing. I love it."
+					"david": {
+						"name": "David Rosario",
+						"username": "@skydreamrealty",
+						"body": "I was very pleased with the page they made for Sky Dream Realty. 100% recommended!"
 					}
 				},
 				"call-to-action": {
-					"heading": "Don't wash time, Start a project <effect>Fast!</effect>",
-					"button": "Start now"
+					"heading": "Don't waste time, start a project <effect>Now!</effect>",
+					"button": "Get started"
 				}
 			}
 		},
@@ -118,7 +112,7 @@
 			"plans": {
 				"star": {
 					"name": "Star",
-					"description": "For small projects like content pages, social network design, and more."
+					"description": "For small projects like content pages, social media design, and more."
 				},
 				"star-plus": {
 					"name": "Star Plus",
@@ -126,14 +120,14 @@
 				},
 				"big-star": {
 					"name": "Big Star",
-					"description": "For large projects requiring advanced solutions and scalability."
+					"description": "For large projects that require advanced solutions and scalability."
 				}
 			},
 			"features": {
 				"heading": "Compare features",
 				"description": "Compare the features to choose the best plan for your needs.",
 				"everything-before": {
-					"heading": "Everything before",
+					"heading": "Everything above",
 					"description": "Includes all features from previous plans."
 				},
 				"brand-design": {
@@ -146,7 +140,7 @@
 				},
 				"social-networks-design": {
 					"heading": "Social Networks Design",
-					"description": "Design engaging social media profiles and posts."
+					"description": "Design attractive social media profiles and posts."
 				},
 				"maintenance": {
 					"heading": "Maintenance",
@@ -158,15 +152,15 @@
 				},
 				"custom-web-design": {
 					"heading": "Custom Web Design",
-					"description": "Tailored web design to meet your specific needs."
+					"description": "Web design tailored to your specific needs."
 				},
 				"ui-ux-improvement": {
 					"heading": "UI/UX Improvement",
-					"description": "Enhance the user interface and user experience."
+					"description": "Improve the user interface and user experience."
 				},
 				"seo-optimization": {
 					"heading": "SEO Optimization",
-					"description": "Improve your website's search engine ranking."
+					"description": "Improve your website's ranking in search engines."
 				},
 				"e-commerce-integration": {
 					"heading": "E-commerce Integration",
@@ -182,7 +176,7 @@
 				},
 				"advanced-ui-ux": {
 					"heading": "Advanced UI/UX",
-					"description": "Advanced improvements to UI and UX."
+					"description": "Advanced UI and UX improvements."
 				},
 				"mobile-app-development": {
 					"heading": "Mobile App Development",
@@ -194,7 +188,7 @@
 				},
 				"security-audit": {
 					"heading": "Security Audit",
-					"description": "Conduct a thorough security audit."
+					"description": "Conduct a comprehensive security audit."
 				},
 				"free-maintenance": {
 					"heading": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} =12 {1 year} other {# months}}",
@@ -211,7 +205,7 @@
 			"sections": {
 				"hero": {
 					"heading": "Meet our <mark>talents</mark>",
-					"description": "Our talented team of passionate developers, designers, and marketing engineers is ready to bring your projects to life. With creativity and expertise, they’ll help you turn ideas into reality."
+					"description": "Our talented team of passionate developers, designers, and marketing engineers is ready to bring your projects to life. With creativity and expertise, they'll help you turn ideas into reality."
 				},
 				"members": {
 					"daniel": {
@@ -236,33 +230,33 @@
 					},
 					"enmanuel": {
 						"name": "Enmanuel Marte",
-						"role": "Cyber Security Engineer"
+						"role": "Cybersecurity Engineer"
 					}
 				},
 				"join": {
-					"heading": "Do you want to <mark>join our team</mark>?",
-					"description": "We are always looking for new talents.",
+					"heading": "Want to <mark>join our team</mark>?",
+					"description": "We're always looking for new talents.",
 					"button": "Contact us"
 				}
 			}
 		},
 		"start": {
 			"heading": "Start a <mark>new project!</mark>",
-			"description": "Tell us about your project and we will help you bring it to life.",
+			"description": "Tell us about your project and we'll help make it a reality.",
 			"placeholders": {
 				"name": "My project",
-				"description": "My awesome project.",
+				"description": "Amazing description of my project...",
 				"plan": "Select a plan"
 			},
 			"form": {
-				"project-info": "Project Information",
-				"name": "Project Name",
+				"project-info": "Project information",
+				"name": "Project name",
 				"plan": "Plan",
 				"description": "Description",
-				"contact": "Contact Information",
+				"contact": "Contact information",
 				"email": "Email",
 				"phone": "Phone",
-				"submit": "Start {name}!"
+				"submit": "Start my project!"
 			}
 		}
 	},
