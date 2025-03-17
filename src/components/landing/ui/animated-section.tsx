@@ -14,7 +14,6 @@ export const AnimatedSection: React.FC<AnimatedSectionProps> = ({
 	motionProps,
 	...props
 }) => {
-	const withMargin = useMediaQuery("(min-width: 640px)");
 	const variants = {
 		hidden: { opacity: 0, transform: "translateY(50px)" },
 		visible: {
@@ -33,7 +32,6 @@ export const AnimatedSection: React.FC<AnimatedSectionProps> = ({
 			viewport={{
 				once: true,
 				amount: 0.2,
-				margin: withMargin ? "-200px" : "0px",
 			}} // Adjusted margin for mobile responsiveness
 			variants={variants}
 			className={cn(

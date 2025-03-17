@@ -5,7 +5,7 @@ export const features = {
 	"content-web-page": ["star", "big-star", "star-plus"],
 	"social-networks-design": ["star", "big-star", "star-plus"],
 	maintenance: ["star", "star-plus", "big-star"],
-	"basic-support": ["star", "big-star", "star-plus"],
+	"basic-support": ["star", "star-plus"],
 	"everything-before": ["star-plus", "big-star"],
 	"custom-web-design": ["star-plus", "big-star"],
 	"ui-ux-improvement": ["star-plus", "big-star"],
