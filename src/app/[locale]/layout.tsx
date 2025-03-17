@@ -7,15 +7,17 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({ 
   params 
 }: { 
-  params: { locale: string } 
+  params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
-  if (!isValidLocale(params.locale)) {
+  const { locale } = await params;
+
+  if (!isValidLocale(locale)) {
     notFound();
   }
 
-  const t = await getTranslations({ locale: params.locale, namespace: 'metadata' });
+  const t = await getTranslations({ locale, namespace: 'metadata' });
   
-  const bannerPath = `/images/opengraph/${params.locale}.png`;
+  const bannerPath = `/images/opengrahp/${locale}.png`;
 
   return {
     title: t('title'),
@@ -37,10 +39,10 @@ export async function generateMetadata({
 const LocaleLayout: React.FC<
   Readonly<{
     children: React.ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
   }>
 > = async ({ children, params }) => {
-  const { locale } = params;
+  const { locale } = await params;
 
   if (!isValidLocale(locale)) {
     notFound();
