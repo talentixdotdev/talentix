@@ -74,35 +74,25 @@
 					"see-all": "Ver todos los proyectos"
 				},
 				"reviews": {
-					"jack": {
-						"name": "Jack",
-						"username": "@jack",
-						"body": "Nunca he visto nada igual. Es increíble. Me encanta."
+					"jose": {
+						"name": "José González",
+						"username": "@madrerafaelaybarra",
+						"body": "La página para el Politécnico Madre Rafaela Ybarra superó mis expectativas. Increíble trabajo!"
 					},
-					"jill": {
-						"name": "Jill",
-						"username": "@jill",
-						"body": "No sé qué decir. Estoy sin palabras. Esto es increíble."
+					"idalenny": {
+						"name": "Idalenny Ramos",
+						"username": "@idivas",
+						"body": "Gracias a la página ahora puedo vender ropa de Shein con mayor facilidad. Ha sido de gran ayuda!"
 					},
-					"john": {
-						"name": "John",
-						"username": "@john",
-						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					"juan": {
+						"name": "Juan Pujols",
+						"username": "@juanpujols",
+						"body": "Me hicieron una página personal y estoy muy feliz con el resultado. Excelente trabajo!"
 					},
-					"jane": {
-						"name": "Jane",
-						"username": "@jane",
-						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
-					},
-					"jenny": {
-						"name": "Jenny",
-						"username": "@jenny",
-						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
-					},
-					"james": {
-						"name": "James",
-						"username": "@james",
-						"body": "Estoy sin palabras. Esto es increíble. Me encanta."
+					"david": {
+						"name": "David Rosario",
+						"username": "@skydreamrealty",
+						"body": "Quedé muy contento con la página que hicieron para Sky Dream Realty. 100% recomendado!"
 					}
 				},
 				"call-to-action": {

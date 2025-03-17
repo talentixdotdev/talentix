@@ -30,25 +30,169 @@
 					"faq": "Perguntas Frequentes",
 					"status": "Status",
 					"help": "Ajuda",
-					"careers": "Carreiras"
+					"talents": "Talentos"
 				}
 			}
 		},
-		"sections": {
-			"hero": {
-				"chips": {
-					"launch_discount": "💸 Desbloqueie <strong>10% de desconto</strong> pelo nosso lançamento!"
+		"landing": {
+			"sections": {
+				"hero": {
+					"chips": {
+						"launch_discount": "💸 Desbloqueie <strong>10% de desconto</strong> pelo nosso lançamento!"
+					},
+					"heading": "Encontre os <mark>melhores talentos</mark> para impulsionar seu negócio",
+					"buttons": {
+						"getting-start": "Iniciar um projeto",
+						"book-call": "Agendar uma chamada"
+					}
 				},
-				"heading": "Encontre o <mark>melhor talento</mark> <br></br> para o seu projeto",
-				"buttons": {
-					"getting-start": "Iniciar um projeto",
-					"book-call": "Agendar uma chamada"
+				"services": {
+					"heading": "Nossos serviços",
+					"description": "Oferecemos os melhores talentos para ajudar em seus projetos. Desde design até desenvolvimento, temos tudo o que você precisa.",
+					"items": {
+						"web-development": {
+							"heading": "Desenvolvimento Web",
+							"description": "Sites e aplicações web impressionantes e de alto desempenho projetados para elevar sua marca e impulsionar o crescimento."
+						},
+						"integrations-and-social-networks": {
+							"heading": "Integrações e Redes Sociais",
+							"description": "Integrações perfeitas com serviços de ponta para otimizar seu fluxo de trabalho e potencializar seu negócio."
+						},
+						"mobile-development": {
+							"heading": "Desenvolvimento Mobile",
+							"description": "Aplicações móveis poderosas e intuitivas projetadas para aumentar o engajamento e acelerar seu sucesso."
+						},
+						"ai-integrations": {
+							"heading": "Integrações de IA",
+							"description": "Aproveite o poder da IA para automatizar, otimizar e revolucionar sua presença digital."
+						}
+					}
+				},
+				"projects": {
+					"heading": "Projetos",
+					"description": "Descubra nossos projetos inovadores, onde tecnologia de ponta encontra criatividade para entregar resultados excepcionais.",
+					"see-all": "Ver todos os projetos"
+				},
+				"reviews": {
+					"jose": {
+						"name": "José González",
+						"username": "@madrerafaelaybarra",
+						"body": "A página para o Politécnico Madre Rafaela Ybarra superou minhas expectativas. Trabalho incrível!"
+					},
+					"idalenny": {
+						"name": "Idalenny Ramos",
+						"username": "@idivas",
+						"body": "Graças à página, agora posso vender roupas da Shein com muito mais facilidade. Foi de grande ajuda!"
+					},
+					"juan": {
+						"name": "Juan Pujols",
+						"username": "@juanpujols",
+						"body": "Fizeram um site pessoal para mim e estou muito feliz com o resultado. Excelente trabalho!"
+					},
+					"david": {
+						"name": "David Rosario",
+						"username": "@skydreamrealty",
+						"body": "Fiquei muito satisfeito com o site que fizeram para a Sky Dream Realty. 100% recomendado!"
+					}
+				},
+				"call-to-action": {
+					"heading": "Não perca tempo, inicie um projeto <effect>Rápido!</effect>",
+					"button": "Comece agora"
+				}
+			}
+		},
+		"pricing": {
+			"heading": "Preços",
+			"description": "Escolha o plano que melhor se adapta às suas necessidades. Se precisar de um plano personalizado, entre em contato conosco.",
+			"feature": "Características",
+			"plans": {
+				"star": {
+					"name": "Estrela",
+					"description": "Para pequenos projetos como sites de conteúdo, design para redes sociais e muito mais."
+				},
+				"star-plus": {
+					"name": "Estrela Plus",
+					"description": "Ideal para negócios em crescimento que precisam de mais funcionalidades e suporte."
+				},
+				"big-star": {
+					"name": "Grande Estrela",
+					"description": "Para projetos grandes que exigem soluções avançadas e escalabilidade."
 				}
 			},
-			"call-to-action": {
-				"heading": "Não perca tempo, <br></br> Inicie um projeto <effect>Rápido!</effect>",
-				"button": "Comece agora"
-			}
+			"features": {
+				"heading": "Comparar características",
+				"description": "Compare os recursos para escolher o melhor plano para suas necessidades.",
+				"everything-before": {
+					"heading": "Tudo o anterior",
+					"description": "Inclui todos os recursos dos planos anteriores."
+				},
+				"brand-design": {
+					"heading": "Design de Marca",
+					"description": "Crie uma identidade de marca única e memorável."
+				},
+				"content-web-page": {
+					"heading": "Site de Conteúdo",
+					"description": "Desenvolvimento de sites ricos em conteúdo."
+				},
+				"social-networks-design": {
+					"heading": "Design para Redes Sociais",
+					"description": "Criação de perfis e posts atraentes para redes sociais."
+				},
+				"maintenance": {
+					"heading": "Manutenção",
+					"description": "Fornecemos manutenção e atualizações para seu serviço."
+				},
+				"basic-support": {
+					"heading": "Suporte Básico",
+					"description": "Receba suporte básico para seus projetos."
+				},
+				"custom-web-design": {
+					"heading": "Design Web Personalizado",
+					"description": "Design web adaptado às suas necessidades específicas."
+				},
+				"ui-ux-improvement": {
+					"heading": "Melhoria de UI/UX",
+					"description": "Melhore a interface e a experiência do usuário."
+				},
+				"seo-optimization": {
+					"heading": "Otimização SEO",
+					"description": "Aprimore o ranking do seu site nos motores de busca."
+				},
+				"e-commerce-integration": {
+					"heading": "Integração de E-commerce",
+					"description": "Adicione funcionalidades de e-commerce ao seu site."
+				},
+				"dedicated-support": {
+					"heading": "Suporte Dedicado",
+					"description": "Receba suporte dedicado para seus projetos."
+				},
+				"custom-software-development": {
+					"heading": "Desenvolvimento de Software Personalizado",
+					"description": "Criação de soluções de software sob medida."
+				},
+				"advanced-ui-ux": {
+					"heading": "UI/UX Avançado",
+					"description": "Melhorias avançadas em UI e UX."
+				},
+				"mobile-app-development": {
+					"heading": "Desenvolvimento de Apps Móveis",
+					"description": "Criação de aplicativos móveis poderosos."
+				},
+				"cloud-integration": {
+					"heading": "Integração com a Nuvem",
+					"description": "Conecte seus serviços à nuvem."
+				},
+				"security-audit": {
+					"heading": "Auditoria de Segurança",
+					"description": "Realize auditorias de segurança completas."
+				},
+				"free-maintenance": {
+					"heading": "Manutenção gratuita por {months, plural, =0 {sem manutenção gratuita} =1 {um mês} =12 {1 ano} other {# meses}}",
+					"description": "Após esse período, o custo será de {price} por mês."
+				}
+			},
+			"start-now": "Comece agora",
+			"contact-us": "Fale conosco"
 		}
 	}
 }
