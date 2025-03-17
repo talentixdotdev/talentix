@@ -19,10 +19,11 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'metadata' });
   
   const headersList = await headers();
-  const host = headersList.get('host') || 'localhost:3000';
+  const host = headersList.get('host') || 'Talentix.com';
   const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
+  const baseUrl = `${protocol}://${host}`;
   
-  const bannerUrl = `${protocol}://${host}/images/opengrahp/${locale}.png`;
+  const bannerUrl = `${baseUrl}/images/opengrahp/${locale}.png`;
 
   return {
     title: t('title'),
@@ -30,32 +31,46 @@ export async function generateMetadata({
     openGraph: {
       title: t('title'),
       description: t('description'),
+      url: `${baseUrl}/${locale}`,
+      siteName: 'Talentix',
+      images: [
+        {
+          url: bannerUrl,
+          width: 1200,
+          height: 630,
+          alt: t('title'),
+        },
+      ],
       type: 'website',
       locale: locale,
-      url: `${protocol}://${host}/${locale}`,
-      siteName: 'Taletix',
-      images: [{
-        url: bannerUrl,
-        width: 1200,
-        height: 630,
-        alt: t('title')
-      }]
     },
+   
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
       images: [bannerUrl],
-      creator: '@taletix'
+      creator: '@Talentix',
     },
+   
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        'en': `${baseUrl}/en`,
+        'es': `${baseUrl}/es`,
+        'pt': `${baseUrl}/pt`,
+      },
+    },
+    
     other: {
       'og:image': bannerUrl,
       'og:image:width': '1200',
       'og:image:height': '630',
-      'og:url': `${protocol}://${host}/${locale}`,
+      'og:url': `${baseUrl}/${locale}`,
       'og:type': 'website',
-      'og:site_name': 'Taletix'
-    }
+      'og:site_name': 'Talentix',
+      'theme-color': '#ffffff',
+    },
   };
 }
 
