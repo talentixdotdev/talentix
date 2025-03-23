@@ -4,10 +4,10 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: Promise<{ locale: string }> 
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params;
 
@@ -16,7 +16,7 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  
+
   const bannerPath = `/images/opengraph/${locale}.png`;
 
   return {
@@ -32,7 +32,8 @@ export async function generateMetadata({
       title: t('title'),
       description: t('description'),
       images: [bannerPath]
-    }
+    },
+    metadataBase: new URL("https://talentix.dev")
   };
 }
 
