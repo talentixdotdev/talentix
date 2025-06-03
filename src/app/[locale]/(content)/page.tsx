@@ -11,14 +11,14 @@ const HomePage: React.FC<{
 	params: Promise<{
 		locale: string;
 	}>
-}> = ({ params }) => {
-	const { locale } = use(params);
+}> = async ({ params }) => {
+	const { locale } = await params;
 	setRequestLocale(locale)
 
 	return (
 		<main
 			className={
-				"flex flex-col items-center max-w-screen-lg w-full mx-auto min-h-screen sm:gap-y-20"
+				"flex flex-col items-center max-w-screen-2xl w-full mx-auto min-h-screen sm:gap-y-20"
 			}
 		>
 			<Hero />

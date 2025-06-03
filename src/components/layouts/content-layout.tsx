@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Button, Link, Navbar, Keyboard, Footer, Separator } from "ui";
+import PromoTopBar from "../landing/promo-bar";
 
 interface ContentLayoutProps extends React.ComponentProps<typeof Navbar> {}
 
@@ -114,10 +115,11 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
 		<div className={"flex flex-col min-h-screen"}>
 			<Navbar isOpen={isOpen} onOpenChange={setIsOpen} isSticky {...props}>
 				<Navbar.Nav
+					id="navbar"
 					className={cn(
 						pathname.endsWith("/pricing")
 							? "bg-bg"
-							: "bg-bg/60 backdrop-blur-sm",
+							: "bg-bg/85 backdrop-blur-sm",
 					)}
 				>
 					<div
@@ -127,8 +129,8 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
 					>
 						<Navbar.Logo href="/">
 							<span className="inline-flex items-center justify-center whitespace-pre font-bold font-mono uppercase text-md">
-								<TalentixBrandIcon size={18} />
-								Talentix
+								<TalentixBrandIcon className="mr-1" size={18} strokeWidth={2} />
+								Talentix<span className="text-sm lowercase">.dev</span>
 							</span>
 						</Navbar.Logo>
 						<Navbar.Section className="w-full justify-center gap-x-6">
@@ -180,6 +182,7 @@ const ContentLayout: React.FC<ContentLayoutProps> = ({
 						</Navbar.Flex>
 					</Navbar.Flex>
 				</Navbar.Compact>
+				<PromoTopBar />
 				<Navbar.Inset>
 					{children}
 					<Footer>

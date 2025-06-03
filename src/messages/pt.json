@@ -105,6 +105,42 @@
 				}
 			}
 		},
+		"promo": {
+			"badge": "Campanha Limitada - Junho 2025",
+			"title": {
+				"main": "Transformação Digital",
+				"highlight": "Que Impulsiona Resultados"
+			},
+			"description": "Impulsione sua marca com um site projetado para inspirar confiança, comunicar valor e conectar-se emocionalmente com seus clientes.",
+			"pricing": {
+				"full_value": "Valor completo do serviço",
+				"original_price": "R$60,625",
+				"discounted_price": "R$48,500",
+				"discount": "20% OFF"
+			},
+			"features": {
+				"website": "Site completo e profissional",
+				"hosting": "Hospedagem incluída por 3 meses",
+				"support": "Suporte pós-lançamento"
+			},
+			"cta": {
+				"main": "Reserve sua apresentação gratuita",
+				"description": "Durante todo o mês de junho, estamos comprometidos em apoiar a digitalização de empresas locais e tradicionais.",
+				"button": "Agendar apresentação agora"
+			},
+			"benefits": {
+				"title": "Benefícios incluídos",
+				"items": {
+					"responsive": "Design adaptável a todos os dispositivos móveis e tablets",
+					"seo": "Otimização para motores de busca (SEO) incluída",
+					"social": "Integração com redes sociais e plataformas de marketing",
+					"analytics": "Análises detalhadas sobre o comportamento dos usuários",
+					"maintenance": "Manutenção técnica incluída por 6 meses",
+					"training": "Treinamento para gerenciar seu próprio conteúdo"
+				}
+			},
+			"showcase": "Ver exemplos de sites"
+		},
 		"pricing": {
 			"heading": "Preços",
 			"description": "Escolha o plano que melhor se adapta às suas necessidades. Se precisar de um plano personalizado, é só falar com a gente.",
@@ -257,6 +293,65 @@
 				"email": "E-mail",
 				"phone": "Telefone",
 				"submit": "Iniciar meu projeto!"
+			}
+		},
+		"contact": {
+			"title": "Entre em Contato",
+			"description": "Tem uma pergunta ou precisa de assistência? Nossa equipe está aqui para ajudar. Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+			"cta": {
+				"book-call": "Agendar uma Reunião"
+			},
+			"form": {
+				"title": "Envie-nos uma Mensagem",
+				"name": {
+					"label": "Nome",
+					"placeholder": "Digite seu nome"
+				},
+				"email": {
+					"label": "E-mail",
+					"placeholder": "Digite seu endereço de e-mail"
+				},
+				"subject": {
+					"label": "Assunto",
+					"placeholder": "Do que se trata?"
+				},
+				"message": {
+					"label": "Mensagem",
+					"placeholder": "Conte-nos o que você precisa..."
+				},
+				"submit": "Enviar Mensagem",
+				"success": "Mensagem Enviada!"
+			},
+			"info": {
+				"phone": {
+					"title": "Telefone",
+					"main": "+1 (809) 379 2506",
+					"support": "+1 (809) 379 2506"
+				},
+				"email": {
+					"title": "E-mail",
+					"main": "hello@talentix.dev",
+					"support": "support@talentix.dev"
+				},
+				"address": {
+					"title": "Endereço",
+					"street": "123 Innovation Street",
+					"city": "Tech City, TX 75001",
+					"country": "Estados Unidos"
+				},
+				"hours": {
+					"title": "Horário Comercial",
+					"weekdays": "Segunda a Sexta: 9h - 18h (Horário do Leste)",
+					"weekend": "Sábado: 10h - 14h (Horário do Leste)"
+				}
+			},
+			"map": {
+				"title": "Encontre-nos",
+				"description": "Visite nossa sede ou agende uma reunião em nosso escritório."
+			},
+			"social": {
+				"title": "Conecte-se Conosco",
+				"description": "Siga-nos nas redes sociais para atualizações, notícias e mais."
 			}
 		}
 	},

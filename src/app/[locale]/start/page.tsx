@@ -26,6 +26,7 @@ import { useSearchParams } from "next/navigation";
 import type { Plan } from "@/types/pricing";
 import { ProjectPreview } from "./_components/project-preview";
 import { useTranslations } from "next-intl";
+import { useState, useEffect } from "react";
 
 const scheme = z.object({
 	name: z.string(),
@@ -43,7 +44,11 @@ export default function StartPage() {
 		planFromUrl && plans.includes(planFromUrl) ? planFromUrl : plans[0];
 	const tPlans = useTranslations("common.plans");
 
-	const { control, handleSubmit, watch } = useForm({
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState<string | null>(null);
+	const [error, setError] = useState<string | null>(null);
+
+	const { control, handleSubmit, watch, reset } = useForm({
 		resolver: zodResolver(scheme),
 		defaultValues: {
 			plan: defaultPlan,
@@ -51,8 +56,38 @@ export default function StartPage() {
 	});
 
 	const watchedValues = watch();
-	const onSubmit = handleSubmit((data) => {
-		console.log(data);
+
+	// Limpiar mensajes al editar
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+	useEffect(() => {
+		setSuccess(null);
+		setError(null);
+	}, [
+		watchedValues.name,
+		watchedValues.plan,
+		watchedValues.email,
+		watchedValues.phone,
+		watchedValues.description,
+	]);
+
+	const onSubmit = handleSubmit(async (data) => {
+		setLoading(true);
+		setSuccess(null);
+		setError(null);
+		try {
+			const res = await fetch("/api/start-project", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(data),
+			});
+			if (!res.ok) throw new Error("Error al enviar el formulario");
+			setSuccess("¡Proyecto enviado con éxito!");
+			reset({ plan: defaultPlan });
+		} catch (err) {
+			setError("Hubo un error. Intenta de nuevo.");
+		} finally {
+			setLoading(false);
+		}
 	});
 
 	return (
@@ -79,6 +114,18 @@ export default function StartPage() {
 				description={watchedValues.description}
 				plan={watchedValues.plan}
 			/>
+
+			{/* Mensajes de feedback */}
+			{success && (
+				<div className="w-full max-w-lg mx-auto bg-success/20 text-success rounded-lg p-3 text-center border-2 border-success border-dashed">
+					{success}
+				</div>
+			)}
+			{error && (
+				<div className="w-full max-w-lg mx-auto bg-danger/20 text-danger rounded-lg p-3 text-center border-2 border-danger border-dashed">
+					{error}
+				</div>
+			)}
 
 			<Form
 				onSubmit={onSubmit}
@@ -190,8 +237,14 @@ export default function StartPage() {
 					/>
 				</div>
 				<div className="inline-flex justify-between mx-auto">
-					<Button intent="primary">
-						<Rocket01Icon size={20} /> {t("form.submit")}
+					<Button intent="primary" type="submit" isDisabled={loading}>
+						{loading ? (
+							<>Enviando...</>
+						) : (
+							<>
+								<Rocket01Icon size={20} /> {t("form.submit")}
+							</>
+						)}
 					</Button>
 				</div>
 			</Form>

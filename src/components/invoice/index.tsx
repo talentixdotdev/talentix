@@ -112,6 +112,21 @@ const Subtotal = ({ amount, className, ...props }: SubtotalProps) => {
   );
 };
 
+interface PercentageProps extends HTMLAttributes<HTMLDivElement> {
+  amount: number;
+}
+
+const Percentage = ({ amount, className, ...props }: PercentageProps) => {
+  return (
+    <>
+      <div className={cn("font-bold col-span-4 mt-3 text-muted-fg", className)} {...props}>
+        Descuento
+      </div>
+      <div className="font-bold text-end mt-3">${amount}</div>
+    </>
+  );
+};
+
 interface TotalProps extends HTMLAttributes<HTMLDivElement> {
   amount: number;
 }
@@ -149,6 +164,7 @@ Invoice.Title = Title;
 Invoice.Body = Body;
 Invoice.Item = Item;
 Invoice.Subtotal = Subtotal;
+Invoice.Percentage = Percentage;
 Invoice.Total = Total;
 Invoice.Footer = Footer;
 

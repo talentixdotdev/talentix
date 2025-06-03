@@ -11,6 +11,7 @@ export const features = {
 	"ui-ux-improvement": ["star-plus", "big-star"],
 	"seo-optimization": ["star-plus", "big-star"],
 	"e-commerce-integration": ["star-plus", "big-star"],
+	"hosting-and-domain": ["star-plus", "big-star"],
 	"dedicated-support": ["star-plus", "big-star"],
 	"custom-software-development": ["big-star"],
 	"advanced-ui-ux": ["big-star"],

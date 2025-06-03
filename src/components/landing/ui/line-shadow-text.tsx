@@ -3,6 +3,7 @@
 import { cn } from "@/utils/classes";
 import { motion, type MotionProps } from "motion/react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 interface LineShadowTextProps
 	extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps>,
@@ -18,9 +19,13 @@ export function LineShadowText({
 }: LineShadowTextProps) {
 	const MotionComponent = motion.create(Component);
 	const content = typeof children === "string" ? children : null;
-
-	const theme = useTheme();
-	const shadowColor = theme.resolvedTheme === "dark" ? "white" : "black";
+	const [shadowColor, setShadowColor] = useState("transparent");
+	
+	const { resolvedTheme } = useTheme();
+	
+	useEffect(() => {
+		setShadowColor(resolvedTheme === "dark" ? "white" : "black");
+	}, [resolvedTheme]);
 
 	if (!content) {
 		throw new Error("LineShadowText only accepts string content");

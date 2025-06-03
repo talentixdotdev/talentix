@@ -39,12 +39,19 @@
 			}
 		},
 		"landing": {
+			"promotion_bar": {
+				"badge": "Launch discount",
+				"description": "<strong>Get 20% off</strong> on your first project — limited time only!",
+				"view_details": "View details",
+				"close": "Close promotion"
+			},
 			"sections": {
 				"hero": {
 					"chips": {
-						"launch_discount": "💸 Unlock <strong>10% discount</strong> for our launch!"
+						"launch_discount": "💸 Unlock <strong>20% discount</strong> for our launch!"
 					},
 					"heading": "Get the <mark>best talent</mark> to boost your business",
+					"description": "An freelance agency connecting your business with the right talent for web development, marketing, and more.",
 					"buttons": {
 						"getting-start": "Start a project",
 						"book-call": "Book a call"
@@ -104,6 +111,42 @@
 					"button": "Get started"
 				}
 			}
+		},
+		"promo": {
+			"badge": "Limited Campaign - June 2025",
+			"title": {
+				"main": "Digital Transformation",
+				"highlight": "That Drives Results"
+			},
+			"description": "Boost your brand with a website designed to inspire confidence, communicate value, and emotionally connect with your customers.",
+			"pricing": {
+				"full_value": "Full service value",
+				"original_price": "$60,625",
+				"discounted_price": "$48,500",
+				"discount": "20% OFF"
+			},
+			"features": {
+				"website": "Complete and professional website",
+				"hosting": "Hosting included for 3 months",
+				"support": "Post-launch support"
+			},
+			"cta": {
+				"main": "Book your free presentation",
+				"description": "Throughout June, we are committed to supporting the digitization of local and traditional businesses.",
+				"button": "Schedule presentation now"
+			},
+			"benefits": {
+				"title": "Included benefits",
+				"items": {
+					"responsive": "Design adaptable to all mobile devices and tablets",
+					"seo": "Search Engine Optimization (SEO) included",
+					"social": "Integration with social networks and marketing platforms",
+					"analytics": "Detailed analytics on user behavior",
+					"maintenance": "Technical maintenance included for 6 months",
+					"training": "Training to manage your own content"
+				}
+			},
+			"showcase": "See site examples"
 		},
 		"pricing": {
 			"heading": "Pricing",
@@ -193,6 +236,10 @@
 				"free-maintenance": {
 					"heading": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} =12 {1 year} other {# months}}",
 					"description": "After that, it will cost {price} per month."
+				},
+				"hosting-and-domain": {
+					"heading": "Hosting and Domain",
+					"description": "We provide hosting and domain for your website."
 				}
 			},
 			"values": {
@@ -257,6 +304,65 @@
 				"email": "Email",
 				"phone": "Phone",
 				"submit": "Start my project!"
+			}
+		},
+		"contact": {
+			"title": "Get in Touch",
+			"description": "Have a question or need assistance? Our team is here to help you. Fill out the form below and we'll get back to you as soon as possible.",
+			"cta": {
+				"book-call": "Schedule a Meeting"
+			},
+			"form": {
+				"title": "Send us a Message",
+				"name": {
+					"label": "Name",
+					"placeholder": "Enter your name"
+				},
+				"email": {
+					"label": "Email",
+					"placeholder": "Enter your email address"
+				},
+				"subject": {
+					"label": "Subject",
+					"placeholder": "What is this about?"
+				},
+				"message": {
+					"label": "Message",
+					"placeholder": "Tell us what you need..."
+				},
+				"submit": "Send Message",
+				"success": "Message Sent!"
+			},
+			"info": {
+				"phone": {
+					"title": "Phone",
+					"main": "+1 (809) 379 2506",
+					"support": "+1 (809) 379 2506"
+				},
+				"email": {
+					"title": "Email",
+					"main": "hello@talentix.dev",
+					"support": "support@talentix.dev"
+				},
+				"address": {
+					"title": "Address",
+					"street": "123 Innovation Street",
+					"city": "Tech City, TX 75001",
+					"country": "United States"
+				},
+				"hours": {
+					"title": "Business Hours",
+					"weekdays": "Monday-Friday: 9am - 6pm EST",
+					"weekend": "Saturday: 10am - 2pm EST"
+				}
+			},
+			"map": {
+				"title": "Find Us",
+				"description": "Visit our headquarters or schedule a meeting at our office."
+			},
+			"social": {
+				"title": "Connect With Us",
+				"description": "Follow us on social media for updates, news, and more."
 			}
 		}
 	},

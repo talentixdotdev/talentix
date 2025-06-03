@@ -31,7 +31,7 @@ export const Projects: React.FC = () => {
 
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/1.png)",
+						backgroundImage: "url(images/projects/grid/1.webp)",
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 					}}
@@ -39,13 +39,13 @@ export const Projects: React.FC = () => {
 				/>
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/2.png)",
+						backgroundImage: "url(images/projects/grid/2.webp)",
 					}}
 					className="bg-cover bg-center bg-bg border border-dashed row-span-2 rounded-lg shadow-lg"
 				/>
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/3.png)",
+						backgroundImage: "url(images/projects/grid/3.webp)",
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 					}}
@@ -53,7 +53,7 @@ export const Projects: React.FC = () => {
 				/>
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/4.png)",
+						backgroundImage: "url(images/projects/grid/4.webp)",
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 					}}
@@ -61,7 +61,7 @@ export const Projects: React.FC = () => {
 				/>
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/5.png)",
+						backgroundImage: "url(images/projects/grid/5.webp)",
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 					}}
@@ -69,7 +69,7 @@ export const Projects: React.FC = () => {
 				/>
 				<div
 					style={{
-						backgroundImage: "url(images/projects/grid/6.png)",
+						backgroundImage: "url(images/projects/grid/6.webp)",
 					}}
 					className="bg-cover bg-center bg-bg border border-dashed row-span-2 rounded-lg shadow-lg"
 				/>

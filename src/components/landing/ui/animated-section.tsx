@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/utils/classes";
-import { useMediaQuery } from "@/utils/use-media-query";
 import { type HTMLMotionProps, motion } from "motion/react";
 
 export interface AnimatedSectionProps extends React.ComponentProps<"section"> {

@@ -105,6 +105,42 @@
 				}
 			}
 		},
+		"promo": {
+			"badge": "Campaña Limitada - Junio 2025",
+			"title": {
+				"main": "Transformación Digital",
+				"highlight": "Que Impulsa Resultados"
+			},
+			"description": "Impulse su marca con un sitio web diseñado para inspirar confianza, comunicar valor y conectar emocionalmente con sus clientes.",
+			"pricing": {
+				"full_value": "Valor completo del servicio",
+				"original_price": "RD$60,625",
+				"discounted_price": "RD$48,500",
+				"discount": "20% OFF"
+			},
+			"features": {
+				"website": "Sitio web completo y profesional",
+				"hosting": "Hosting incluido por 3 meses",
+				"support": "Soporte post-lanzamiento"
+			},
+			"cta": {
+				"main": "Reserve su presentación gratuita",
+				"description": "Durante todo el mes de junio, estamos comprometidos con apoyar la digitalización de empresas locales y tradicionales.",
+				"button": "Agendar presentación ahora"
+			},
+			"benefits": {
+				"title": "Beneficios incluidos",
+				"items": {
+					"responsive": "Diseño adaptable a todos los dispositivos móviles y tablets",
+					"seo": "Optimización para motores de búsqueda (SEO) incluida",
+					"social": "Integración con redes sociales y plataformas de marketing",
+					"analytics": "Analíticas detalladas sobre el comportamiento de usuarios",
+					"maintenance": "Mantenimiento técnico incluido por 6 meses",
+					"training": "Capacitación para gestionar su propio contenido"
+				}
+			},
+			"showcase": "Ver ejemplos de sitios"
+		},
 		"pricing": {
 			"heading": "Precios",
 			"description": "Elige el plan que mejor se adapte a tus necesidades. Si necesitas un plan personalizado, no dudes en contactarnos.",
@@ -193,6 +229,10 @@
 				"free-maintenance": {
 					"heading": "Mantenimiento gratuito por {months, plural, =0 {sin mantenimiento gratuito} =1 {un mes} =12 {1 año} other {# meses}}",
 					"description": "Después de eso, costará {price} por mes."
+				},
+				"hosting-and-domain": {
+					"heading": "Alojamiento y Dominio",
+					"description": "Proporcionamos alojamiento y dominio para tu sitio web."
 				}
 			},
 			"values": {
@@ -257,6 +297,65 @@
 				"email": "Correo electrónico",
 				"phone": "Teléfono",
 				"submit": "¡Iniciar mi proyecto!"
+			}
+		},
+		"contact": {
+			"title": "Contáctanos",
+			"description": "¿Tienes una pregunta o necesitas ayuda? Nuestro equipo está aquí para ayudarte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.",
+			"cta": {
+				"book-call": "Programar una Reunión"
+			},
+			"form": {
+				"title": "Envíanos un Mensaje",
+				"name": {
+					"label": "Nombre",
+					"placeholder": "Ingresa tu nombre"
+				},
+				"email": {
+					"label": "Correo electrónico",
+					"placeholder": "Ingresa tu dirección de correo electrónico"
+				},
+				"subject": {
+					"label": "Asunto",
+					"placeholder": "¿De qué se trata?"
+				},
+				"message": {
+					"label": "Mensaje",
+					"placeholder": "Cuéntanos lo que necesitas..."
+				},
+				"submit": "Enviar Mensaje",
+				"success": "¡Mensaje Enviado!"
+			},
+			"info": {
+				"phone": {
+					"title": "Teléfono",
+					"main": "+1 (809) 379 2506",
+					"support": "+1 (809) 379 2506"
+				},
+				"email": {
+					"title": "Correo electrónico",
+					"main": "hello@talentix.dev",
+					"support": "support@talentix.dev"
+				},
+				"address": {
+					"title": "Dirección",
+					"street": "123 Innovation Street",
+					"city": "Tech City, TX 75001",
+					"country": "Estados Unidos"
+				},
+				"hours": {
+					"title": "Horario de Atención",
+					"weekdays": "Lunes a Viernes: 9am - 6pm EST",
+					"weekend": "Sábado: 10am - 2pm EST"
+				}
+			},
+			"map": {
+				"title": "Encuéntranos",
+				"description": "Visita nuestra sede o programa una reunión en nuestra oficina."
+			},
+			"social": {
+				"title": "Conecta con Nosotros",
+				"description": "Síguenos en redes sociales para actualizaciones, noticias y más."
 			}
 		}
 	},

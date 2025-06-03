@@ -8,7 +8,7 @@
 		--dark: 239.95 9% 6%;
 		--bg: 0 0% 100%;
 		--fg: 239.93 9% 4%;
-		--primary: 38, 92%, 50%;
+		--primary: 32, 95%, 44%;
 		--primary-fg: 0 0% 100%;
 		--secondary: 240 5.88% 90%;
 		--secondary-fg: 240.01 6% 10%;
@@ -45,7 +45,7 @@
 	.dark {
 		--bg: 0 0% 0%;
 		--fg: 223.81 0% 98%;
-		--primary: 32 95% 44%;
+		--primary: 32, 95%, 44%;
 		--primary-fg: 0 0% 100%;
 		--secondary: 240 5.88% 10%;
 		--secondary-fg: 223.81 0% 98%;
@@ -58,7 +58,7 @@
 		--overlay: 240.03 6% 6%;
 		--overlay-fg: 223.81 0% 98%;
 		--muted: 240.05 4.04% 15.93%;
-		--muted-fg: 240 5.03% 64.9%;
+		--muted-fg: 240 5.03% 73.9%;
 		--info: 205.77 100% 50%;
 		--info-fg: 0 0% 100%;
 		--success: 161.17 91% 31%;
@@ -123,4 +123,30 @@
 
 svg:focus {
 	outline: none;
+}
+
+@layer utilities {
+
+
+	@keyframes shine-move {
+		0% {
+			transform: translateX(-200%);
+		}
+
+		100% {
+			transform: translateX(200%);
+		}
+	}
+
+
+
+	.shine-effect {
+		background: linear-gradient(to right,
+				transparent 0%,
+				rgba(255, 255, 255, 0.2) 50%,
+				transparent 100%);
+		width: 50%;
+		height: 100%;
+		animation: shine-move 2s ease-in-out infinite;
+	}
 }
