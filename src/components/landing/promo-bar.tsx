@@ -1,10 +1,12 @@
 import { ArrowRight01Icon, Cancel01Icon, HotPriceIcon } from "hugeicons-react";
-import { useEffect, useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 const PromoTopBar = () => {
+	const pathname = usePathname();
     const t = useTranslations("content.landing.promotion_bar");
 
 	const [isVisible, setIsVisible] = useState(true);
@@ -17,6 +19,16 @@ const PromoTopBar = () => {
 			setNavbarHeight(navbar.offsetHeight);
 		}
 	}, []);
+
+	useEffect(() => {
+		const hiddenPaths = ["/login", "/register", "/pricing", "/promo"];
+		if (hiddenPaths.includes(pathname)) {
+			setIsVisible(false);
+		} else {
+			setIsVisible(true);
+		}
+	}, [pathname]);
+
 
 	if (!isVisible) return null;
 
@@ -47,7 +59,8 @@ const PromoTopBar = () => {
 						<Link href="/promo">
 							<Button
 								className="flex items-center gap-2 group text-sm"
-								appearance="plain"
+								appearance="solid"
+								size="small"
 							>
 								{t("view_details")}								
                                 <ArrowRight01Icon className="w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-200" />

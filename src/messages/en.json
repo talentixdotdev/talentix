@@ -40,7 +40,7 @@
 		},
 		"landing": {
 			"promotion_bar": {
-				"badge": "Launch discount",
+				"badge": "Discount",
 				"description": "<strong>Get 20% off</strong> on your first project — limited time only!",
 				"view_details": "View details",
 				"close": "Close promotion"
@@ -113,7 +113,7 @@
 			}
 		},
 		"promo": {
-			"badge": "Limited Campaign - June 2025",
+			"badge": "Limited Campaign - July 2025",
 			"title": {
 				"main": "Digital Transformation",
 				"highlight": "That Drives Results"
@@ -121,8 +121,8 @@
 			"description": "Boost your brand with a website designed to inspire confidence, communicate value, and emotionally connect with your customers.",
 			"pricing": {
 				"full_value": "Full service value",
-				"original_price": "$60,625",
-				"discounted_price": "$48,500",
+				"original_price": "$1000.00",
+				"discounted_price": "$799.99",
 				"discount": "20% OFF"
 			},
 			"features": {
@@ -132,7 +132,7 @@
 			},
 			"cta": {
 				"main": "Book your free presentation",
-				"description": "Throughout June, we are committed to supporting the digitization of local and traditional businesses.",
+				"description": "Throughout July, we are committed to supporting the digitization of local and traditional businesses.",
 				"button": "Schedule presentation now"
 			},
 			"benefits": {

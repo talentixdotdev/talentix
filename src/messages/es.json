@@ -106,7 +106,7 @@
 			}
 		},
 		"promo": {
-			"badge": "Campaña Limitada - Junio 2025",
+			"badge": "Campaña Limitada - Julio 2025",
 			"title": {
 				"main": "Transformación Digital",
 				"highlight": "Que Impulsa Resultados"
@@ -114,9 +114,9 @@
 			"description": "Impulse su marca con un sitio web diseñado para inspirar confianza, comunicar valor y conectar emocionalmente con sus clientes.",
 			"pricing": {
 				"full_value": "Valor completo del servicio",
-				"original_price": "RD$60,625",
-				"discounted_price": "RD$48,500",
-				"discount": "20% OFF"
+				"original_price": "RD$60,000",
+				"discounted_price": "RD$48,000",
+				"discount": "20% DE DESCUENTO"
 			},
 			"features": {
 				"website": "Sitio web completo y profesional",
@@ -125,7 +125,7 @@
 			},
 			"cta": {
 				"main": "Reserve su presentación gratuita",
-				"description": "Durante todo el mes de junio, estamos comprometidos con apoyar la digitalización de empresas locales y tradicionales.",
+				"description": "Durante todo el mes de kulio, estamos comprometidos con apoyar la digitalización de empresas locales y tradicionales.",
 				"button": "Agendar presentación ahora"
 			},
 			"benefits": {
