@@ -114,9 +114,9 @@
 			"description": "Impulse su marca con un sitio web diseñado para inspirar confianza, comunicar valor y conectar emocionalmente con sus clientes.",
 			"pricing": {
 				"full_value": "Valor completo del servicio",
-				"original_price": "RD$60,000",
-				"discounted_price": "RD$48,000",
-				"discount": "20% DE DESCUENTO"
+				"original_price": "$1000.00",
+				"discounted_price": "$799.99",
+				"discount": "20% MENOS"
 			},
 			"features": {
 				"website": "Sitio web completo y profesional",

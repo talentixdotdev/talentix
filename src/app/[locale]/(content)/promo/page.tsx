@@ -20,7 +20,7 @@ import { useTranslations } from "next-intl";
 
 const PromotionPage: React.FC = () => {
 	const t = useTranslations("content.promo");
-	
+
 	const benefits = [
 		{
 			icon: ZapIcon,
@@ -70,7 +70,9 @@ const PromotionPage: React.FC = () => {
 
 					<h1 className="text-3xl md:text-6xl font-bold text-fg mb-6 md:mb-8 leading-8">
 						{t("title.main")}
-						<span className="block text-primary-fg bg-primary">{t("title.highlight")}</span>
+						<span className="block text-primary-fg bg-primary">
+							{t("title.highlight")}
+						</span>
 					</h1>
 
 					<p className="text-xl text-muted-fg mb-4 max-w-4xl mx-auto leading-relaxed">
@@ -101,14 +103,19 @@ const PromotionPage: React.FC = () => {
 									<p className="text-primary-fg/80 text-sm font-medium mb-2">
 										{t("pricing.full_value")}
 									</p>
-									<p className="text-primary-fg/70 line-through text-2xl mb-4">
-										{t("pricing.original_price")}
-									</p>
+									<div className="flex gap-1 items-baseline">
+										<p className="text-primary-fg/70 line-through text-2xl mb-4">
+											{t("pricing.original_price")}
+										</p>
+										<span className="text-xs opacity-50">USD</span>
+									</div>
 									<div className="flex items-baseline gap-2">
 										<span className="text-5xl font-bold text-primary-fg relative group-hover:scale-105 group-hover:-rotate-6 transition-transform duration-300">
 											{t("pricing.discounted_price")}
 										</span>
-										<span className="text-primary-fg/80 text-lg">{t("pricing.discount")}</span>
+										<span className="text-primary-fg/80 text-lg">
+											{t("pricing.discount")}
+										</span>
 									</div>
 								</div>
 								<div className="space-y-3">
