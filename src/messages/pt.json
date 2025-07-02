@@ -14,24 +14,24 @@
 				},
 				"buttons": {
 					"getting-start": "Iniciar um projeto",
-					"book-call": "Agendar uma ligação"
+					"book-call": "Agendar uma chamada"
 				}
 			},
 			"footer": {
 				"titles": {
 					"company": "Empresa",
 					"resources": "Recursos",
-					"legals": "Jurídico"
+					"legals": "Legal"
 				},
 				"items": {
-					"about": "Sobre nós",
+					"about": "Sobre",
 					"blog": "Blog",
 					"contact": "Contato",
 					"terms": "Termos de Serviço",
 					"privacy": "Política de Privacidade",
 					"cookies": "Política de Cookies",
 					"pricing": "Preços",
-					"faq": "Perguntas Frequentes",
+					"faq": "FAQ",
 					"status": "Status",
 					"help": "Ajuda",
 					"talents": "Talentos"
@@ -39,32 +39,39 @@
 			}
 		},
 		"landing": {
+			"promotion_bar": {
+				"badge": "Desconto",
+				"description": "<strong>Ganhe 20% de desconto</strong> no seu primeiro projeto — por tempo limitado!",
+				"view_details": "Ver detalhes",
+				"close": "Fechar promoção"
+			},
 			"sections": {
 				"hero": {
 					"chips": {
-						"launch_discount": "💸 Desbloqueie <strong>10% de desconto</strong> pelo nosso lançamento!"
+						"launch_discount": "💸 Desbloqueie <strong>20% de desconto</strong> para o nosso lançamento!"
 					},
-					"heading": "Consiga o <mark>melhor talento</mark> para impulsionar seu negócio",
+					"heading": "Obtenha o <mark>melhor talento</mark> para impulsionar seu negócio",
+					"description": "Uma agência freelancer que conecta seu negócio com o talento certo para desenvolvimento web, marketing e muito mais.",
 					"buttons": {
 						"getting-start": "Iniciar um projeto",
-						"book-call": "Agendar uma ligação"
+						"book-call": "Agendar uma chamada"
 					}
 				},
 				"services": {
 					"heading": "Nossos serviços",
-					"description": "Fornecemos os melhores talentos para ajudar com seus projetos. Do design ao desenvolvimento, a gente dá conta do recado.",
+					"description": "Oferecemos os melhores talentos para ajudar com seus projetos. Do design ao desenvolvimento, nós cuidamos de tudo.",
 					"items": {
 						"web-development": {
 							"heading": "Desenvolvimento Web",
-							"description": "Sites e aplicações web impressionantes e de alta performance projetados para elevar sua marca e impulsionar o crescimento."
+							"description": "Sites e aplicações web impressionantes e de alto desempenho projetados para elevar sua marca e impulsionar o crescimento."
 						},
 						"integrations-and-social-networks": {
 							"heading": "Integrações e Redes Sociais",
-							"description": "Integrações tranquilas com serviços de primeira linha para otimizar seu fluxo de trabalho e potencializar seu negócio."
+							"description": "Integrações perfeitas com serviços de primeira linha para otimizar seu fluxo de trabalho e impulsionar seu negócio."
 						},
 						"mobile-development": {
 							"heading": "Desenvolvimento Mobile",
-							"description": "Aplicativos móveis potentes e fáceis de usar projetados para melhorar o engajamento e acelerar seu sucesso."
+							"description": "Aplicativos móveis poderosos e fáceis de usar, projetados para aumentar o engajamento e acelerar seu sucesso."
 						},
 						"ai-integrations": {
 							"heading": "Integrações de IA",
@@ -74,24 +81,24 @@
 				},
 				"projects": {
 					"heading": "Projetos",
-					"description": "Descubra nossos projetos inovadores, onde tecnologia de ponta se encontra com criatividade para entregar resultados excepcionais.",
+					"description": "Descubra nossos projetos inovadores, onde a tecnologia de ponta encontra a criatividade para entregar resultados excepcionais.",
 					"see-all": "Ver todos os projetos"
 				},
 				"reviews": {
 					"jose": {
 						"name": "José González",
 						"username": "@madrerafaelaybarra",
-						"body": "A página para o Politécnico Madre Rafaela Ybarra superou minhas expectativas. Trabalho incrível!"
+						"body": "A página do Politécnico Madre Rafaela Ybarra superou minhas expectativas. Trabalho incrível!"
 					},
 					"idalenny": {
 						"name": "Idalenny Ramos",
 						"username": "@idivas",
-						"body": "Graças à página agora posso vender roupas da Shein com mais facilidade. Foi de grande ajuda!"
+						"body": "Graças à página, agora consigo vender roupas da Shein com mais facilidade. Tem sido de grande ajuda!"
 					},
 					"juan": {
 						"name": "Juan Pujols",
 						"username": "@juanpujols",
-						"body": "Fizeram uma página pessoal pra mim e estou super feliz com o resultado. Excelente trabalho!"
+						"body": "Fizeram uma página pessoal para mim e estou muito feliz com o resultado. Excelente trabalho!"
 					},
 					"david": {
 						"name": "David Rosario",
@@ -100,42 +107,42 @@
 					}
 				},
 				"call-to-action": {
-					"heading": "Não perca tempo, inicie um projeto <effect>Já!</effect>",
-					"button": "Comece agora"
+					"heading": "Não perca tempo, comece um projeto <effect>Agora!</effect>",
+					"button": "Começar"
 				}
 			}
 		},
 		"promo": {
-			"badge": "Campanha Limitada - Junho 2025",
+			"badge": "Campanha Limitada - Julho 2025",
 			"title": {
 				"main": "Transformação Digital",
-				"highlight": "Que Impulsiona Resultados"
+				"highlight": "Que Gera Resultados"
 			},
-			"description": "Impulsione sua marca com um site projetado para inspirar confiança, comunicar valor e conectar-se emocionalmente com seus clientes.",
+			"description": "Impulsione sua marca com um site projetado para inspirar confiança, comunicar valor e conectar emocionalmente com seus clientes.",
 			"pricing": {
-				"full_value": "Valor completo do serviço",
-				"original_price": "R$60,625",
-				"discounted_price": "R$48,500",
+				"full_value": "Valor total do serviço",
+				"original_price": "$1000.00",
+				"discounted_price": "$799.99",
 				"discount": "20% OFF"
 			},
 			"features": {
 				"website": "Site completo e profissional",
-				"hosting": "Hospedagem incluída por 3 meses",
+				"hosting": "Hospedagem inclusa por 3 meses",
 				"support": "Suporte pós-lançamento"
 			},
 			"cta": {
 				"main": "Reserve sua apresentação gratuita",
-				"description": "Durante todo o mês de junho, estamos comprometidos em apoiar a digitalização de empresas locais e tradicionais.",
+				"description": "Durante todo o mês de julho, estamos comprometidos em apoiar a digitalização de negócios locais e tradicionais.",
 				"button": "Agendar apresentação agora"
 			},
 			"benefits": {
 				"title": "Benefícios incluídos",
 				"items": {
 					"responsive": "Design adaptável a todos os dispositivos móveis e tablets",
-					"seo": "Otimização para motores de busca (SEO) incluída",
+					"seo": "Otimização para Motores de Busca (SEO) inclusa",
 					"social": "Integração com redes sociais e plataformas de marketing",
-					"analytics": "Análises detalhadas sobre o comportamento dos usuários",
-					"maintenance": "Manutenção técnica incluída por 6 meses",
+					"analytics": "Análises detalhadas sobre o comportamento do usuário",
+					"maintenance": "Manutenção técnica inclusa por 6 meses",
 					"training": "Treinamento para gerenciar seu próprio conteúdo"
 				}
 			},
@@ -143,28 +150,28 @@
 		},
 		"pricing": {
 			"heading": "Preços",
-			"description": "Escolha o plano que melhor se adapta às suas necessidades. Se precisar de um plano personalizado, é só falar com a gente.",
-			"feature": "Características",
+			"description": "Escolha o plano que melhor se adapta às suas necessidades. Se precisar de um plano personalizado, não hesite em nos contatar.",
+			"feature": "Funcionalidades",
 			"plans": {
 				"star": {
 					"name": "Estrela",
-					"description": "Para projetos pequenos como páginas de conteúdo, design de redes sociais e mais."
+					"description": "Para pequenos projetos como páginas de conteúdo, design de mídias sociais e muito mais."
 				},
 				"star-plus": {
 					"name": "Estrela Plus",
-					"description": "Ideal para negócios em crescimento que precisam de mais funcionalidades e suporte."
+					"description": "Ideal para empresas em crescimento que precisam de mais funcionalidade e suporte."
 				},
 				"big-star": {
 					"name": "Grande Estrela",
-					"description": "Para projetos grandes que requerem soluções avançadas e escalabilidade."
+					"description": "Para grandes projetos que exigem soluções avançadas e escalabilidade."
 				}
 			},
 			"features": {
-				"heading": "Comparar características",
-				"description": "Compare as características para escolher o melhor plano para suas necessidades.",
+				"heading": "Comparar funcionalidades",
+				"description": "Compare as funcionalidades para escolher o melhor plano para suas necessidades.",
 				"everything-before": {
-					"heading": "Tudo o anterior",
-					"description": "Inclui todas as características dos planos anteriores."
+					"heading": "Tudo acima",
+					"description": "Inclui todas as funcionalidades dos planos anteriores."
 				},
 				"brand-design": {
 					"heading": "Design de Marca",
@@ -172,15 +179,15 @@
 				},
 				"content-web-page": {
 					"heading": "Página Web de Conteúdo",
-					"description": "Design e desenvolvimento de páginas web ricas em conteúdo."
+					"description": "Crie e desenvolva páginas web ricas em conteúdo."
 				},
 				"social-networks-design": {
 					"heading": "Design de Redes Sociais",
-					"description": "Design de perfis e publicações atraentes em redes sociais."
+					"description": "Crie perfis e postagens atraentes para mídias sociais."
 				},
 				"maintenance": {
 					"heading": "Manutenção",
-					"description": "Fornecemos manutenção e atualizações para seu serviço."
+					"description": "Oferecemos manutenção e atualizações para o seu serviço."
 				},
 				"basic-support": {
 					"heading": "Suporte Básico",
@@ -200,7 +207,7 @@
 				},
 				"e-commerce-integration": {
 					"heading": "Integração de E-commerce",
-					"description": "Integre funcionalidade de comércio eletrônico no seu site."
+					"description": "Integre a funcionalidade de e-commerce ao seu site."
 				},
 				"dedicated-support": {
 					"heading": "Suporte Dedicado",
@@ -212,36 +219,40 @@
 				},
 				"advanced-ui-ux": {
 					"heading": "UI/UX Avançado",
-					"description": "Melhorias avançadas em UI e UX."
+					"description": "Melhorias avançadas de UI e UX."
 				},
 				"mobile-app-development": {
 					"heading": "Desenvolvimento de Aplicativos Móveis",
-					"description": "Desenvolva aplicativos móveis potentes."
+					"description": "Desenvolva aplicativos móveis poderosos."
 				},
 				"cloud-integration": {
 					"heading": "Integração na Nuvem",
-					"description": "Integre serviços na nuvem em suas soluções."
+					"description": "Integre serviços em nuvem às suas soluções."
 				},
 				"security-audit": {
 					"heading": "Auditoria de Segurança",
-					"description": "Realize uma auditoria de segurança completa."
+					"description": "Realize uma auditoria de segurança abrangente."
 				},
 				"free-maintenance": {
-					"heading": "Manutenção gratuita por {months, plural, =0 {sem manutenção gratuita} =1 {um mês} =12 {1 ano} other {# meses}}",
+					"heading": "Manutenção gratuita por {months, plural, =0 {nenhuma manutenção gratuita} =1 {um mês} =12 {1 ano} other {# meses}}",
 					"description": "Depois disso, custará {price} por mês."
+				},
+				"hosting-and-domain": {
+					"heading": "Hospedagem e Domínio",
+					"description": "Oferecemos hospedagem e domínio para o seu site."
 				}
 			},
 			"values": {
-				"free-maintenance": "Manutenção gratuita por {months, plural, =0 {sem manutenção gratuita} =1 {um mês} other {# meses}}. Depois disso, custará {price} por mês."
+				"free-maintenance": "Manutenção gratuita por {months, plural, =0 {nenhuma manutenção gratuita} =1 {um mês} other {# meses}}. Depois disso, custará {price} por mês."
 			},
-			"start-now": "Comece agora",
-			"contact-us": "Fale conosco"
+			"start-now": "Começar agora",
+			"contact-us": "Entre em contato"
 		},
 		"talents": {
 			"sections": {
 				"hero": {
 					"heading": "Conheça nossos <mark>talentos</mark>",
-					"description": "Nossa talentosa equipe de desenvolvedores, designers e engenheiros de marketing apaixonados está pronta para dar vida aos seus projetos. Com criatividade e experiência, vamos te ajudar a transformar ideias em realidade."
+					"description": "Nossa equipe talentosa de desenvolvedores, designers e engenheiros de marketing apaixonados está pronta para dar vida aos seus projetos. Com criatividade e experiência, eles ajudarão você a transformar ideias em realidade."
 				},
 				"members": {
 					"daniel": {
@@ -270,18 +281,18 @@
 					}
 				},
 				"join": {
-					"heading": "Quer <mark>fazer parte da nossa equipe</mark>?",
-					"description": "Estamos sempre em busca de novos talentos.",
-					"button": "Fale conosco"
+					"heading": "Quer <mark>entrar para a nossa equipe</mark>?",
+					"description": "Estamos sempre procurando novos talentos.",
+					"button": "Entre em contato"
 				}
 			}
 		},
 		"start": {
-			"heading": "Inicie um <mark>novo projeto!</mark>",
-			"description": "Conte-nos sobre seu projeto e vamos ajudar a torná-lo realidade.",
+			"heading": "Comece um <mark>novo projeto!</mark>",
+			"description": "Conte-nos sobre o seu projeto e nós o ajudaremos a torná-lo realidade.",
 			"placeholders": {
 				"name": "Meu projeto",
-				"description": "Descrição incrível do meu projeto...",
+				"description": "Incrível descrição do meu projeto...",
 				"plan": "Selecione um plano"
 			},
 			"form": {
@@ -297,7 +308,7 @@
 		},
 		"contact": {
 			"title": "Entre em Contato",
-			"description": "Tem uma pergunta ou precisa de assistência? Nossa equipe está aqui para ajudar. Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+			"description": "Tem alguma pergunta ou precisa de assistência? Nossa equipe está aqui para ajudar. Preencha o formulário abaixo e retornaremos o mais breve possível.",
 			"cta": {
 				"book-call": "Agendar uma Reunião"
 			},
@@ -313,7 +324,7 @@
 				},
 				"subject": {
 					"label": "Assunto",
-					"placeholder": "Do que se trata?"
+					"placeholder": "Sobre o que é isso?"
 				},
 				"message": {
 					"label": "Mensagem",
@@ -341,8 +352,8 @@
 				},
 				"hours": {
 					"title": "Horário Comercial",
-					"weekdays": "Segunda a Sexta: 9h - 18h (Horário do Leste)",
-					"weekend": "Sábado: 10h - 14h (Horário do Leste)"
+					"weekdays": "Segunda a Sexta: 9h - 18h EST",
+					"weekend": "Sábado: 10h - 14h EST"
 				}
 			},
 			"map": {
@@ -351,7 +362,7 @@
 			},
 			"social": {
 				"title": "Conecte-se Conosco",
-				"description": "Siga-nos nas redes sociais para atualizações, notícias e mais."
+				"description": "Siga-nos nas redes sociais para atualizações, notícias e muito mais."
 			}
 		}
 	},

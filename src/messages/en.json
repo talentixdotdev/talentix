@@ -1,381 +1,381 @@
 {
 	"metadata": {
 		"title": "Talentix",
-		"description": "Connecting talents and projects to boost your business"
+		"description": "Conectando talentos y proyectos para impulsar tu negocio"
 	},
 	"content": {
 		"layout": {
 			"navbar": {
 				"items": {
-					"talents": "Talents",
-					"projects": "Projects",
-					"pricing": "Pricing",
-					"support": "Support"
+					"talents": "Talentos",
+					"projects": "Proyectos",
+					"pricing": "Precios",
+					"support": "Soporte"
 				},
 				"buttons": {
-					"getting-start": "Start a project",
-					"book-call": "Book a call"
+					"getting-start": "Iniciar un proyecto",
+					"book-call": "Agendar una llamada"
 				}
 			},
 			"footer": {
 				"titles": {
-					"company": "Company",
-					"resources": "Resources",
+					"company": "Empresa",
+					"resources": "Recursos",
 					"legals": "Legal"
 				},
 				"items": {
-					"about": "About",
+					"about": "Acerca de",
 					"blog": "Blog",
-					"contact": "Contact",
-					"terms": "Terms of Service",
-					"privacy": "Privacy Policy",
-					"cookies": "Cookie Policy",
-					"pricing": "Pricing",
-					"faq": "FAQ",
-					"status": "Status",
-					"help": "Help",
-					"talents": "Talents"
+					"contact": "Contacto",
+					"terms": "Términos de Servicio",
+					"privacy": "Política de Privacidad",
+					"cookies": "Política de Cookies",
+					"pricing": "Precios",
+					"faq": "Preguntas Frecuentes",
+					"status": "Estado",
+					"help": "Ayuda",
+					"talents": "Talentos"
 				}
 			}
 		},
 		"landing": {
 			"promotion_bar": {
-				"badge": "Discount",
-				"description": "<strong>Get 20% off</strong> on your first project — limited time only!",
-				"view_details": "View details",
-				"close": "Close promotion"
+				"badge": "Descuento",
+				"description": "<strong>Obtén 20% de descuento</strong> en tu primer proyecto — ¡por tiempo limitado!",
+				"view_details": "Ver detalles",
+				"close": "Cerrar promoción"
 			},
 			"sections": {
 				"hero": {
 					"chips": {
-						"launch_discount": "💸 Unlock <strong>20% discount</strong> for our launch!"
+						"launch_discount": "💸 ¡Desbloquea un <strong>20% de descuento</strong> por nuestro lanzamiento!"
 					},
-					"heading": "Get the <mark>best talent</mark> to boost your business",
-					"description": "An freelance agency connecting your business with the right talent for web development, marketing, and more.",
+					"heading": "Consigue el <mark>mejor talento</mark> para impulsar tu negocio",
+					"description": "Una agencia freelance que conecta tu negocio con el talento adecuado para desarrollo web, marketing y más.",
 					"buttons": {
-						"getting-start": "Start a project",
-						"book-call": "Book a call"
+						"getting-start": "Iniciar un proyecto",
+						"book-call": "Agendar una llamada"
 					}
 				},
 				"services": {
-					"heading": "Our services",
-					"description": "We provide the best talents to help with your projects. From design to development, we've got you covered.",
+					"heading": "Nuestros servicios",
+					"description": "Ofrecemos los mejores talentos para ayudarte con tus proyectos. Desde diseño hasta desarrollo, te tenemos cubierto.",
 					"items": {
 						"web-development": {
-							"heading": "Web Development",
-							"description": "Stunning, high-performance websites and web applications designed to elevate your brand and drive growth."
+							"heading": "Desarrollo Web",
+							"description": "Sitios web y aplicaciones web impresionantes y de alto rendimiento diseñados para elevar tu marca e impulsar el crecimiento."
 						},
 						"integrations-and-social-networks": {
-							"heading": "Integrations & Social Networks",
-							"description": "Seamless integrations with top-tier services to streamline your workflow and power your business."
+							"heading": "Integraciones y Redes Sociales",
+							"description": "Integraciones perfectas con servicios de primer nivel para optimizar tu flujo de trabajo e impulsar tu negocio."
 						},
 						"mobile-development": {
-							"heading": "Mobile Development",
-							"description": "Powerful, user-friendly mobile applications designed to enhance engagement and accelerate your success."
+							"heading": "Desarrollo Móvil",
+							"description": "Aplicaciones móviles potentes y fáciles de usar diseñadas para mejorar el compromiso y acelerar tu éxito."
 						},
 						"ai-integrations": {
-							"heading": "AI Integrations",
-							"description": "Leverage the power of AI to automate, optimize, and revolutionize your digital presence."
+							"heading": "Integraciones de IA",
+							"description": "Aprovecha el poder de la IA para automatizar, optimizar y revolucionar tu presencia digital."
 						}
 					}
 				},
 				"projects": {
-					"heading": "Projects",
-					"description": "Discover our innovative projects, where cutting-edge technology meets creativity to deliver exceptional results.",
-					"see-all": "See all projects"
+					"heading": "Proyectos",
+					"description": "Descubre nuestros proyectos innovadores, donde la tecnología de vanguardia se une a la creatividad para ofrecer resultados excepcionales.",
+					"see-all": "Ver todos los proyectos"
 				},
 				"reviews": {
 					"jose": {
 						"name": "José González",
 						"username": "@madrerafaelaybarra",
-						"body": "The page for Politécnico Madre Rafaela Ybarra exceeded my expectations. Amazing work!"
+						"body": "La página del Politécnico Madre Rafaela Ybarra superó mis expectativas. ¡Increíble trabajo!"
 					},
 					"idalenny": {
 						"name": "Idalenny Ramos",
 						"username": "@idivas",
-						"body": "Thanks to the page I can now sell Shein clothes more easily. It has been a great help!"
+						"body": "Gracias a la página ahora puedo vender ropa de Shein más fácilmente. ¡Ha sido de gran ayuda!"
 					},
 					"juan": {
 						"name": "Juan Pujols",
 						"username": "@juanpujols",
-						"body": "They made me a personal page and I'm very happy with the result. Excellent work!"
+						"body": "Me hicieron una página personal y estoy muy contento con el resultado. ¡Excelente trabajo!"
 					},
 					"david": {
 						"name": "David Rosario",
 						"username": "@skydreamrealty",
-						"body": "I was very pleased with the page they made for Sky Dream Realty. 100% recommended!"
+						"body": "Quedé muy satisfecho con la página que me hicieron para Sky Dream Realty. ¡100% recomendado!"
 					}
 				},
 				"call-to-action": {
-					"heading": "Don't waste time, start a project <effect>Now!</effect>",
-					"button": "Get started"
+					"heading": "¡No pierdas tiempo, inicia un proyecto <effect>Ahora!</effect>",
+					"button": "Comenzar"
 				}
 			}
 		},
 		"promo": {
-			"badge": "Limited Campaign - July 2025",
+			"badge": "Campaña Limitada - Julio 2025",
 			"title": {
-				"main": "Digital Transformation",
-				"highlight": "That Drives Results"
+				"main": "Transformación Digital",
+				"highlight": "Que Genera Resultados"
 			},
-			"description": "Boost your brand with a website designed to inspire confidence, communicate value, and emotionally connect with your customers.",
+			"description": "Impulsa tu marca con una página web diseñada para inspirar confianza, comunicar valor y conectar emocionalmente con tus clientes.",
 			"pricing": {
-				"full_value": "Full service value",
+				"full_value": "Valor total del servicio",
 				"original_price": "$1000.00",
 				"discounted_price": "$799.99",
-				"discount": "20% OFF"
+				"discount": "20% DE DESCUENTO"
 			},
 			"features": {
-				"website": "Complete and professional website",
-				"hosting": "Hosting included for 3 months",
-				"support": "Post-launch support"
+				"website": "Página web completa y profesional",
+				"hosting": "Hosting incluido por 3 meses",
+				"support": "Soporte post-lanzamiento"
 			},
 			"cta": {
-				"main": "Book your free presentation",
-				"description": "Throughout July, we are committed to supporting the digitization of local and traditional businesses.",
-				"button": "Schedule presentation now"
+				"main": "Reserva tu presentación gratuita",
+				"description": "Durante todo el mes de julio, nos comprometemos a apoyar la digitalización de negocios locales y tradicionales.",
+				"button": "Agendar presentación ahora"
 			},
 			"benefits": {
-				"title": "Included benefits",
+				"title": "Beneficios incluidos",
 				"items": {
-					"responsive": "Design adaptable to all mobile devices and tablets",
-					"seo": "Search Engine Optimization (SEO) included",
-					"social": "Integration with social networks and marketing platforms",
-					"analytics": "Detailed analytics on user behavior",
-					"maintenance": "Technical maintenance included for 6 months",
-					"training": "Training to manage your own content"
+					"responsive": "Diseño adaptable a todos los dispositivos móviles y tabletas",
+					"seo": "Optimización para Motores de Búsqueda (SEO) incluida",
+					"social": "Integración con redes sociales y plataformas de marketing",
+					"analytics": "Análisis detallados sobre el comportamiento del usuario",
+					"maintenance": "Mantenimiento técnico incluido por 6 meses",
+					"training": "Capacitación para gestionar tu propio contenido"
 				}
 			},
-			"showcase": "See site examples"
+			"showcase": "Ver ejemplos de sitios"
 		},
 		"pricing": {
-			"heading": "Pricing",
-			"description": "Choose the plan that best fits your needs. If you need a custom plan, don't hesitate to contact us.",
-			"feature": "Features",
+			"heading": "Precios",
+			"description": "Elige el plan que mejor se adapte a tus necesidades. Si necesitas un plan personalizado, no dudes en contactarnos.",
+			"feature": "Características",
 			"plans": {
 				"star": {
-					"name": "Star",
-					"description": "For small projects like content pages, social media design, and more."
+					"name": "Estrella",
+					"description": "Para proyectos pequeños como páginas de contenido, diseño de redes sociales y más."
 				},
 				"star-plus": {
-					"name": "Star Plus",
-					"description": "Ideal for growing businesses that need more functionality and support."
+					"name": "Estrella Plus",
+					"description": "Ideal para negocios en crecimiento que necesitan más funcionalidad y soporte."
 				},
 				"big-star": {
-					"name": "Big Star",
-					"description": "For large projects that require advanced solutions and scalability."
+					"name": "Gran Estrella",
+					"description": "Para proyectos grandes que requieren soluciones avanzadas y escalabilidad."
 				}
 			},
 			"features": {
-				"heading": "Compare features",
-				"description": "Compare the features to choose the best plan for your needs.",
+				"heading": "Comparar características",
+				"description": "Compara las características para elegir el mejor plan para tus necesidades.",
 				"everything-before": {
-					"heading": "Everything above",
-					"description": "Includes all features from previous plans."
+					"heading": "Todo lo anterior",
+					"description": "Incluye todas las características de los planes anteriores."
 				},
 				"brand-design": {
-					"heading": "Brand Design",
-					"description": "Create a unique and memorable brand identity."
+					"heading": "Diseño de Marca",
+					"description": "Crea una identidad de marca única y memorable."
 				},
 				"content-web-page": {
-					"heading": "Content Web Page",
-					"description": "Design and develop content-rich web pages."
+					"heading": "Página Web de Contenido",
+					"description": "Diseña y desarrolla páginas web ricas en contenido."
 				},
 				"social-networks-design": {
-					"heading": "Social Networks Design",
-					"description": "Design attractive social media profiles and posts."
+					"heading": "Diseño de Redes Sociales",
+					"description": "Diseña perfiles y publicaciones atractivas para redes sociales."
 				},
 				"maintenance": {
-					"heading": "Maintenance",
-					"description": "We provide maintenance and updates to your service."
+					"heading": "Mantenimiento",
+					"description": "Proporcionamos mantenimiento y actualizaciones a tu servicio."
 				},
 				"basic-support": {
-					"heading": "Basic Support",
-					"description": "Receive basic support for your projects."
+					"heading": "Soporte Básico",
+					"description": "Recibe soporte básico para tus proyectos."
 				},
 				"custom-web-design": {
-					"heading": "Custom Web Design",
-					"description": "Web design tailored to your specific needs."
+					"heading": "Diseño Web Personalizado",
+					"description": "Diseño web adaptado a tus necesidades específicas."
 				},
 				"ui-ux-improvement": {
-					"heading": "UI/UX Improvement",
-					"description": "Improve the user interface and user experience."
+					"heading": "Mejora de UI/UX",
+					"description": "Mejora la interfaz de usuario y la experiencia de usuario."
 				},
 				"seo-optimization": {
-					"heading": "SEO Optimization",
-					"description": "Improve your website's ranking in search engines."
+					"heading": "Optimización SEO",
+					"description": "Mejora el posicionamiento de tu sitio web en los motores de búsqueda."
 				},
 				"e-commerce-integration": {
-					"heading": "E-commerce Integration",
-					"description": "Integrate e-commerce functionality into your site."
+					"heading": "Integración de E-commerce",
+					"description": "Integra la funcionalidad de comercio electrónico en tu sitio."
 				},
 				"dedicated-support": {
-					"heading": "Dedicated Support",
-					"description": "Receive dedicated support for your projects."
+					"heading": "Soporte Dedicado",
+					"description": "Recibe soporte dedicado para tus proyectos."
 				},
 				"custom-software-development": {
-					"heading": "Custom Software Development",
-					"description": "Develop custom software solutions."
+					"heading": "Desarrollo de Software Personalizado",
+					"description": "Desarrolla soluciones de software personalizadas."
 				},
 				"advanced-ui-ux": {
-					"heading": "Advanced UI/UX",
-					"description": "Advanced UI and UX improvements."
+					"heading": "UI/UX Avanzado",
+					"description": "Mejoras avanzadas de UI y UX."
 				},
 				"mobile-app-development": {
-					"heading": "Mobile App Development",
-					"description": "Develop powerful mobile applications."
+					"heading": "Desarrollo de Aplicaciones Móviles",
+					"description": "Desarrolla potentes aplicaciones móviles."
 				},
 				"cloud-integration": {
-					"heading": "Cloud Integration",
-					"description": "Integrate cloud services into your solutions."
+					"heading": "Integración en la Nube",
+					"description": "Integra servicios en la nube en tus soluciones."
 				},
 				"security-audit": {
-					"heading": "Security Audit",
-					"description": "Conduct a comprehensive security audit."
+					"heading": "Auditoría de Seguridad",
+					"description": "Realiza una auditoría de seguridad exhaustiva."
 				},
 				"free-maintenance": {
-					"heading": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} =12 {1 year} other {# months}}",
-					"description": "After that, it will cost {price} per month."
+					"heading": "Mantenimiento gratuito por {months, plural, =0 {sin mantenimiento gratuito} =1 {un mes} =12 {1 año} other {# meses}}",
+					"description": "Después, costará {price} por mes."
 				},
 				"hosting-and-domain": {
-					"heading": "Hosting and Domain",
-					"description": "We provide hosting and domain for your website."
+					"heading": "Hosting y Dominio",
+					"description": "Proporcionamos hosting y dominio para tu sitio web."
 				}
 			},
 			"values": {
-				"free-maintenance": "Free maintenance for {months, plural, =0 {no free maintenance} =1 {one month} other {# months}}. After that, it will cost {price} per month."
+				"free-maintenance": "Mantenimiento gratuito por {months, plural, =0 {sin mantenimiento gratuito} =1 {un mes} other {# meses}}. Después, costará {price} por mes."
 			},
-			"start-now": "Start now",
-			"contact-us": "Contact us"
+			"start-now": "Comenzar ahora",
+			"contact-us": "Contáctanos"
 		},
 		"talents": {
 			"sections": {
 				"hero": {
-					"heading": "Meet our <mark>talents</mark>",
-					"description": "Our talented team of passionate developers, designers, and marketing engineers is ready to bring your projects to life. With creativity and expertise, they'll help you turn ideas into reality."
+					"heading": "Conoce a nuestros <mark>talentos</mark>",
+					"description": "Nuestro talentoso equipo de apasionados desarrolladores, diseñadores e ingenieros de marketing está listo para hacer realidad tus proyectos. Con creatividad y experiencia, te ayudarán a convertir ideas en realidad."
 				},
 				"members": {
 					"daniel": {
 						"name": "Daniel Rosario",
-						"role": "Full-stack Developer"
+						"role": "Desarrollador Full-stack"
 					},
 					"jarel": {
 						"name": "Jarel Feliz",
-						"role": "Professional Designer"
+						"role": "Diseñador Profesional"
 					},
 					"katia": {
 						"name": "Katia Pujols",
-						"role": "Front-end Developer"
+						"role": "Desarrolladora Front-end"
 					},
 					"joshua": {
 						"name": "Joshua Williams",
-						"role": "Marketing Engineer"
+						"role": "Ingeniero de Marketing"
 					},
 					"kendry": {
 						"name": "Kendry De La Cruz",
-						"role": "Marketing Engineer"
+						"role": "Ingeniero de Marketing"
 					},
 					"enmanuel": {
 						"name": "Enmanuel Marte",
-						"role": "Cybersecurity Engineer"
+						"role": "Ingeniero de Ciberseguridad"
 					}
 				},
 				"join": {
-					"heading": "Want to <mark>join our team</mark>?",
-					"description": "We're always looking for new talents.",
-					"button": "Contact us"
+					"heading": "¿Quieres <mark>unirte a nuestro equipo</mark>?",
+					"description": "Siempre estamos buscando nuevos talentos.",
+					"button": "Contáctanos"
 				}
 			}
 		},
 		"start": {
-			"heading": "Start a <mark>new project!</mark>",
-			"description": "Tell us about your project and we'll help make it a reality.",
+			"heading": "¡Inicia un <mark>nuevo proyecto!</mark>",
+			"description": "Cuéntanos sobre tu proyecto y te ayudaremos a hacerlo realidad.",
 			"placeholders": {
-				"name": "My project",
-				"description": "Amazing description of my project...",
-				"plan": "Select a plan"
+				"name": "Mi proyecto",
+				"description": "Increíble descripción de mi proyecto...",
+				"plan": "Selecciona un plan"
 			},
 			"form": {
-				"project-info": "Project information",
-				"name": "Project name",
+				"project-info": "Información del proyecto",
+				"name": "Nombre del proyecto",
 				"plan": "Plan",
-				"description": "Description",
-				"contact": "Contact information",
-				"email": "Email",
-				"phone": "Phone",
-				"submit": "Start my project!"
+				"description": "Descripción",
+				"contact": "Información de contacto",
+				"email": "Correo electrónico",
+				"phone": "Teléfono",
+				"submit": "¡Iniciar mi proyecto!"
 			}
 		},
 		"contact": {
-			"title": "Get in Touch",
-			"description": "Have a question or need assistance? Our team is here to help you. Fill out the form below and we'll get back to you as soon as possible.",
+			"title": "Ponte en Contacto",
+			"description": "¿Tienes una pregunta o necesitas ayuda? Nuestro equipo está aquí para ayudarte. Rellena el formulario a continuación y nos pondremos en contacto contigo lo antes posible.",
 			"cta": {
-				"book-call": "Schedule a Meeting"
+				"book-call": "Agendar una Reunión"
 			},
 			"form": {
-				"title": "Send us a Message",
+				"title": "Envíanos un Mensaje",
 				"name": {
-					"label": "Name",
-					"placeholder": "Enter your name"
+					"label": "Nombre",
+					"placeholder": "Introduce tu nombre"
 				},
 				"email": {
-					"label": "Email",
-					"placeholder": "Enter your email address"
+					"label": "Correo electrónico",
+					"placeholder": "Introduce tu dirección de correo electrónico"
 				},
 				"subject": {
-					"label": "Subject",
-					"placeholder": "What is this about?"
+					"label": "Asunto",
+					"placeholder": "¿De qué se trata?"
 				},
 				"message": {
-					"label": "Message",
-					"placeholder": "Tell us what you need..."
+					"label": "Mensaje",
+					"placeholder": "Cuéntanos lo que necesitas..."
 				},
-				"submit": "Send Message",
-				"success": "Message Sent!"
+				"submit": "Enviar Mensaje",
+				"success": "¡Mensaje Enviado!"
 			},
 			"info": {
 				"phone": {
-					"title": "Phone",
+					"title": "Teléfono",
 					"main": "+1 (809) 379 2506",
 					"support": "+1 (809) 379 2506"
 				},
 				"email": {
-					"title": "Email",
+					"title": "Correo electrónico",
 					"main": "hello@talentix.dev",
 					"support": "support@talentix.dev"
 				},
 				"address": {
-					"title": "Address",
-					"street": "123 Innovation Street",
-					"city": "Tech City, TX 75001",
-					"country": "United States"
+					"title": "Dirección",
+					"street": "123 Calle Innovación",
+					"city": "Ciudad Tecnológica, TX 75001",
+					"country": "Estados Unidos"
 				},
 				"hours": {
-					"title": "Business Hours",
-					"weekdays": "Monday-Friday: 9am - 6pm EST",
-					"weekend": "Saturday: 10am - 2pm EST"
+					"title": "Horario Comercial",
+					"weekdays": "Lunes a Viernes: 9am - 6pm EST",
+					"weekend": "Sábado: 10am - 2pm EST"
 				}
 			},
 			"map": {
-				"title": "Find Us",
-				"description": "Visit our headquarters or schedule a meeting at our office."
+				"title": "Encuéntranos",
+				"description": "Visita nuestra sede o agenda una reunión en nuestra oficina."
 			},
 			"social": {
-				"title": "Connect With Us",
-				"description": "Follow us on social media for updates, news, and more."
+				"title": "Conecta con Nosotros",
+				"description": "Síguenos en redes sociales para actualizaciones, noticias y más."
 			}
 		}
 	},
 	"common": {
 		"status": {
-			"working": "Working",
-			"offline": "Offline",
-			"vacations": "Vacations"
+			"working": "Trabajando",
+			"offline": "Desconectado",
+			"vacations": "Vacaciones"
 		},
 		"plans": {
-			"star": "Star",
-			"star-plus": "Star Plus",
-			"big-star": "Big Star"
+			"star": "Estrella",
+			"star-plus": "Estrella Plus",
+			"big-star": "Gran Estrella"
 		}
 	}
 }
