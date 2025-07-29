@@ -22,6 +22,21 @@ const BaseLayout: React.FC<BaseLayoutProps> = async ({ children, locale }) => {
 					href="/icons/favicon.ico"
 					type="image/x-icon"
 				/>
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-C14GR2CWJP"
+				/>
+				<script
+					// biome-ignore lint/security/noDangerouslySetInnerHtml: internal script for Google Analytics.
+					dangerouslySetInnerHTML={{
+						__html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-C14GR2CWJP');
+                        `,
+					}}
+				/>
 			</head>
 			<body className={cn(inter.className, "bg-bg antialiased")}>
 				<Providers>
