@@ -72,6 +72,7 @@ const config = withTV({
 			animation: {
 				marquee: "marquee var(--duration) linear infinite",
 				orbit: "orbit calc(var(--duration)*1s) linear infinite",
+				shine: "shine 5s linear infinite",
 			},
 			keyframes: {
 				marquee: {
@@ -87,6 +88,10 @@ const config = withTV({
 						transform:
 							"rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))",
 					},
+				},
+				shine: {
+					"0%": { "background-position": "100%" },
+					"100%": { "background-position": "-100%" },
 				},
 			},
 		},

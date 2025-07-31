@@ -106,40 +106,78 @@
 			}
 		},
 		"promo": {
-			"badge": "Campaña Limitada - Julio 2025",
+			"badge": "🎯 MES DE LAS 5 PÁGINAS - AGOSTO 2025",
 			"title": {
-				"main": "Transformación Digital",
-				"highlight": "Que Impulsa Resultados"
+				"main": "Sitio Estático de 5 Páginas",
+				"highlight": "USD 200"
 			},
-			"description": "Impulse su marca con un sitio web diseñado para inspirar confianza, comunicar valor y conectar emocionalmente con sus clientes.",
+			"description": "¡Este es el mes de las 5 P de Talentix! Sitio web profesional optimizado para velocidad y SEO. Incluye dominio, hosting, SSL y diseño responsive.",
+			"highlight": {
+				"badge": "🎯 LAS 5 P'S DE TALENTIX",
+				"title": "Este mes es especial para nosotros",
+				"description": "Presentamos nuestra oferta más completa: 5 páginas profesionales que transformarán tu presencia digital"
+			},
 			"pricing": {
-				"full_value": "Valor completo del servicio",
-				"original_price": "$1000.00",
-				"discounted_price": "$799.99",
-				"discount": "20% MENOS"
+				"price": "USD 200",
+				"original_price": "$500.00",
+				"discount": "60% OFF"
 			},
 			"features": {
-				"website": "Sitio web completo y profesional",
-				"hosting": "Hosting incluido por 3 meses",
-				"support": "Soporte post-lanzamiento"
+				"domain": "Dominio + Hosting 3 meses",
+				"ssl": "SSL gratuito",
+				"responsive": "Diseño responsive",
+				"speed": "Velocidad optimizada",
+				"revisions": "Hasta 2 rondas de corrección",
+				"delivery": "Entrega en 3-5 días",
+				"seo": "SEO básico 100% optimizado"
 			},
-			"cta": {
-				"main": "Reserve su presentación gratuita",
-				"description": "Durante todo el mes de kulio, estamos comprometidos con apoyar la digitalización de empresas locales y tradicionales.",
-				"button": "Agendar presentación ahora"
-			},
-			"benefits": {
-				"title": "Beneficios incluidos",
-				"items": {
-					"responsive": "Diseño adaptable a todos los dispositivos móviles y tablets",
-					"seo": "Optimización para motores de búsqueda (SEO) incluida",
-					"social": "Integración con redes sociales y plataformas de marketing",
-					"analytics": "Analíticas detalladas sobre el comportamiento de usuarios",
-					"maintenance": "Mantenimiento técnico incluido por 6 meses",
-					"training": "Capacitación para gestionar su propio contenido"
+			"pages": {
+				"title": "Las 5 páginas incluidas",
+				"home": {
+					"title": "Inicio",
+					"description": "Hero animado con texto deslizante y llamadas a la acción"
+				},
+				"about": {
+					"title": "Quiénes Somos",
+					"description": "Contenido con fade-in elegante y presentación de equipo"
+				},
+				"services": {
+					"title": "Servicios",
+					"description": "Iconos animados que entran uno a uno con micro-interacciones"
+				},
+				"portfolio": {
+					"title": "Portfolio",
+					"description": "Galería simulada con slider y preview de proyectos"
+				},
+				"contact": {
+					"title": "Contacto",
+					"description": "Formulario con micro-interacciones en campos al foco"
 				}
 			},
-			"showcase": "Ver ejemplos de sitios"
+			"cta": {
+				"main": "¡Obtén tu sitio web ahora!",
+				"description": "Envía un DM con el código WEB5 para acceder a esta oferta especial.",
+				"button": "Envía DM con código WEB5"
+			},
+			"urgency": {
+				"title": "Oferta válida hasta 15 de agosto",
+				"days_left": "Días restantes"
+			},
+			"testimonials": {
+				"title": "Lo que dicen nuestros clientes",
+				"items": {
+					"client1": {
+						"name": "María González",
+						"role": "Emprendedora",
+						"text": "Mi sitio web está funcionando perfectamente. El SEO básico ya me está trayendo clientes orgánicos."
+					},
+					"client2": {
+						"name": "Carlos Rodríguez",
+						"role": "Consultor",
+						"text": "Entrega rápida y profesional. El diseño responsive se ve increíble en todos los dispositivos."
+					}
+				}
+			}
 		},
 		"pricing": {
 			"heading": "Precios",
