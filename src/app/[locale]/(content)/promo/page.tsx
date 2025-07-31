@@ -18,6 +18,8 @@ import {
 	UserIcon,
 	Briefcase01Icon,
 	CreditCardIcon,
+	CircleIcon,
+	StarIcon,
 } from "hugeicons-react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
@@ -576,67 +578,51 @@ const AmazingHero: React.FC = () => {
 	);
 };
 
-// Optimized Features Section with Clean GSAP
-const AmazingFeatures: React.FC = () => {
+// Features List Component - No cards, just a clean list
+const FeaturesList: React.FC = () => {
 	const t = useTranslations("content.promo");
 	const sectionRef = useRef<HTMLDivElement>(null);
-	const cardsRef = useRef<HTMLDivElement>(null);
+	const listRef = useRef<HTMLDivElement>(null);
 	
 	const features = [
 		{ 
 			icon: GlobeIcon, 
 			text: t("features.domain"), 
 			color: "from-blue-500 to-cyan-500",
-			gradient: "linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)"
 		},
 		{ 
 			icon: Shield01Icon, 
 			text: t("features.ssl"), 
 			color: "from-green-500 to-emerald-500",
-			gradient: "linear-gradient(135deg, #10b981 0%, #059669 100%)"
-		},
-		{ 
-			icon: GlobeIcon, 
-			text: t("features.responsive"), 
-			color: "from-purple-500 to-pink-500",
-			gradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)"
 		},
 		{ 
 			icon: Rocket01Icon, 
 			text: t("features.speed"), 
 			color: "from-orange-500 to-red-500",
-			gradient: "linear-gradient(135deg, #f97316 0%, #dc2626 100%)"
 		},
 		{ 
 			icon: Edit01Icon, 
 			text: t("features.revisions"), 
 			color: "from-indigo-500 to-blue-500",
-			gradient: "linear-gradient(135deg, #6366f1 0%, #3b82f6 100%)"
-		},
-		{ 
-			icon: Search01Icon, 
-			text: t("features.seo"), 
-			color: "from-teal-500 to-green-500",
-			gradient: "linear-gradient(135deg, #14b8a6 0%, #10b981 100%)"
 		},
 	];
 
 	useEffect(() => {
-		if (!cardsRef.current) return;
+		if (!listRef.current) return;
 
-		const cards = cardsRef.current.querySelectorAll('.feature-card');
+		const items = listRef.current.querySelectorAll('.feature-item');
 		
 		// Clean initial setup
-		gsap.set(cards, {
+		gsap.set(items, {
 			opacity: 0,
-			y: 50,
+			x: -50,
 		});
 
-		// Simple stagger animation without any floating
-		gsap.to(cards, {
+		// Simple stagger animation
+		gsap.to(items, {
 			opacity: 1,
-			y: 0,
-			duration: 0.8,
+			x: 0,
+			duration: 0.6,
 			ease: "power2.out",
 			stagger: 0.1,
 			scrollTrigger: {
@@ -644,32 +630,11 @@ const AmazingFeatures: React.FC = () => {
 				start: "top 80%",
 			}
 		});
-
-		// Clean hover effects without any floating
-		cards.forEach((card) => {
-			const cardElement = card as HTMLElement;
-			
-			cardElement.addEventListener('mouseenter', () => {
-				gsap.to(cardElement, {
-					scale: 1.02,
-					duration: 0.3,
-					ease: "power2.out",
-				});
-			});
-
-			cardElement.addEventListener('mouseleave', () => {
-				gsap.to(cardElement, {
-					scale: 1,
-					duration: 0.3,
-					ease: "power2.out",
-				});
-			});
-		});
 	}, []);
 
 	return (
 		<div ref={sectionRef} className="py-12 sm:py-16 md:py-20 px-4 cursor-target">
-			<div className="max-w-6xl mx-auto">
+			<div className="max-w-4xl mx-auto">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -686,35 +651,26 @@ const AmazingFeatures: React.FC = () => {
 					/>
 				</motion.div>
 
-				<div ref={cardsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
+				<div ref={listRef} className="space-y-4">
 					{features.map((feature, index) => {
 						const Icon = feature.icon;
 						return (
 							<div
 								key={index}
-								className="feature-card group cursor-target relative p-4 sm:p-6 bg-slate-800/20 border border-slate-700/30 rounded-xl sm:rounded-2xl hover:bg-slate-800/40 hover:border-primary/50 transition-all duration-300 h-full"
-								style={{
-									background: `linear-gradient(135deg, rgba(30, 41, 59, 0.2) 0%, rgba(15, 23, 42, 0.3) 100%)`,
-								}}
+								className="feature-item group cursor-target relative p-4 sm:p-6 bg-slate-800/20 border border-slate-700/30 rounded-xl hover:bg-slate-800/40 hover:border-primary/50 transition-all duration-300"
 							>
-								{/* Clean gradient overlay */}
-								<div 
-									className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-xl sm:rounded-2xl"
-									style={{ background: feature.gradient }}
-								/>
-
-								<div className="relative z-10">
-									<div className="mb-3 sm:mb-4">
-										<div 
-											className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300"
-											style={{ background: feature.gradient }}
-										>
-											<Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-										</div>
+								<div className="flex items-center gap-4">
+									<div 
+										className={`w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center bg-gradient-to-r ${feature.color} group-hover:scale-105 transition-transform duration-300`}
+									>
+										<Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
 									</div>
-									<span className="text-gray-300 text-sm sm:text-base group-hover:text-white transition-colors duration-300 leading-relaxed">
+									<span className="text-gray-300 text-base sm:text-lg group-hover:text-white transition-colors duration-300 font-medium">
 										{feature.text}
 									</span>
+									<div className="ml-auto">
+										<CircleIcon className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+									</div>
 								</div>
 							</div>
 						);
@@ -725,105 +681,47 @@ const AmazingFeatures: React.FC = () => {
 	);
 };
 
-// Beautiful Pages Section
-const BeautifulPagesSection: React.FC = () => {
-	const pages = [
-		{
-			icon: DomeIcon,
-			title: "Página Principal",
-			description: "Landing page impactante con hero section, servicios destacados y llamadas a la acción optimizadas para conversión.",
-			color: "from-blue-500 to-cyan-500",
-			gradient: "linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)"
-		},
-		{
-			icon: UserIcon,
-			title: "Sobre Nosotros",
-			description: "Página corporativa con información del equipo, valores de la empresa y testimonios de clientes satisfechos.",
-			color: "from-purple-500 to-pink-500",
-			gradient: "linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)"
-		},
-		{
-			icon: Briefcase01Icon,
-			title: "Portafolio",
-			description: "Galería de proyectos con filtros interactivos, casos de estudio detallados y resultados medibles.",
-			color: "from-green-500 to-emerald-500",
-			gradient: "linear-gradient(135deg, #10b981 0%, #059669 100%)"
-		},
-		{
-			icon: Mail01Icon,
-			title: "Contacto",
-			description: "Formulario de contacto inteligente, mapa interactivo, información de ubicación y múltiples canales de comunicación.",
-			color: "from-orange-500 to-red-500",
-			gradient: "linear-gradient(135deg, #f97316 0%, #dc2626 100%)"
-		},
-		{
-			icon: CreditCardIcon,
-			title: "Precios",
-			description: "Tabla de precios transparente, comparación de planes, testimonios de clientes y garantía de satisfacción.",
-			color: "from-indigo-500 to-blue-500",
-			gradient: "linear-gradient(135deg, #6366f1 0%, #3b82f6 100%)"
-		},
+// Stats Component - No cards, just stats
+const StatsSection: React.FC = () => {
+	const stats = [
+		{ number: "100%", label: "Responsive", icon: GlobeIcon },
+		{ number: "24/7", label: "Soporte", icon: Shield01Icon },
+		{ number: "5", label: "Páginas", icon: DomeIcon },
 	];
 
 	const sectionRef = useRef<HTMLDivElement>(null);
-	const cardsRef = useRef<HTMLDivElement>(null);
+	const statsRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		if (!cardsRef.current) return;
+		if (!statsRef.current) return;
 
-		const cards = cardsRef.current.querySelectorAll('.page-card');
+		const statElements = statsRef.current.querySelectorAll('.stat-item');
 		
-		// Initial setup
-		gsap.set(cards, {
+		gsap.set(statElements, {
 			opacity: 0,
-			y: 100,
+			y: 50,
 			scale: 0.8,
 		});
 
-		// Beautiful stagger animation
-		gsap.to(cards, {
+		gsap.to(statElements, {
 			opacity: 1,
 			y: 0,
 			scale: 1,
-			duration: 1,
+			duration: 0.8,
 			ease: "back.out(1.7)",
 			stagger: 0.2,
 			scrollTrigger: {
 				trigger: sectionRef.current,
-				start: "top 70%",
+				start: "top 80%",
 			}
-		});
-
-		// Interactive hover effects
-		cards.forEach((card) => {
-			const cardElement = card as HTMLElement;
-			
-			cardElement.addEventListener('mouseenter', () => {
-				gsap.to(cardElement, {
-					scale: 1.05,
-					y: -10,
-					duration: 0.4,
-					ease: "power2.out",
-				});
-			});
-
-			cardElement.addEventListener('mouseleave', () => {
-				gsap.to(cardElement, {
-					scale: 1,
-					y: 0,
-					duration: 0.4,
-					ease: "power2.out",
-				});
-			});
 		});
 	}, []);
 
 	return (
-		<div ref={sectionRef} className="py-16 sm:py-20 md:py-24 px-4 relative overflow-hidden">
-			{/* Background gradient */}
+		<div ref={sectionRef} className="py-16 sm:py-20 px-4 relative overflow-hidden">
 			<div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-black to-slate-900" />
 			
-			<div className="max-w-7xl mx-auto relative z-10">
+			<div className="max-w-6xl mx-auto relative z-10">
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
@@ -832,87 +730,155 @@ const BeautifulPagesSection: React.FC = () => {
 				>
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
 						<span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-							5 Páginas
+							Estadísticas
 						</span>
 						<br />
-						<span className="text-white">Profesionales</span>
+						<span className="text-white">que Importan</span>
 					</h2>
 					<ShinyText 
-						text="Cada página diseñada para convertir visitantes en clientes" 
+						text="Números que respaldan nuestra calidad" 
 						speed={3}
 						className="text-lg sm:text-xl text-gray-300"
 					/>
 				</motion.div>
 
-				<div ref={cardsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-					{pages.map((page, index) => {
-						const Icon = page.icon;
+				<div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+					{stats.map((stat, index) => {
+						const Icon = stat.icon;
 						return (
 							<div
 								key={index}
-								className="page-card group relative p-6 sm:p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-primary/50 transition-all duration-500 backdrop-blur-sm"
-								style={{
-									background: `linear-gradient(135deg, rgba(30, 41, 59, 0.3) 0%, rgba(15, 23, 42, 0.4) 100%)`,
-								}}
+								className="stat-item group text-center p-6 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-primary/50 transition-all duration-300 backdrop-blur-sm"
 							>
-								{/* Animated background */}
-								<div 
-									className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-2xl"
-									style={{ background: page.gradient }}
-								/>
-								
-								{/* Glow effect */}
-								<div 
-									className="absolute inset-0 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-2xl blur-xl"
-									style={{ background: page.gradient }}
-								/>
-
-								<div className="relative z-10">
-									{/* Icon */}
-									<div className="mb-6">
-										<div 
-											className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg"
-											style={{ background: page.gradient }}
-										>
-											<Icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-										</div>
+								<div className="mb-4">
+									<div className="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center bg-gradient-to-r from-primary to-accent group-hover:scale-110 transition-transform duration-300 shadow-lg">
+										<Icon className="w-8 h-8 text-white" />
 									</div>
-
-									{/* Content */}
-									<h3 className="text-xl sm:text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
-										{page.title}
-									</h3>
-									<p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-										{page.description}
-									</p>
-
-									{/* Decorative elements */}
-									<div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-										<div className="w-2 h-2 rounded-full bg-primary" />
-									</div>
-									<div className="absolute bottom-4 left-4 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
-										<div className="w-1 h-1 rounded-full bg-accent" />
-									</div>
+								</div>
+								<div className="text-3xl sm:text-4xl font-bold text-primary mb-2 group-hover:scale-105 transition-transform duration-300">
+									{stat.number}
+								</div>
+								<div className="text-gray-300 text-base sm:text-lg font-medium">
+									{stat.label}
 								</div>
 							</div>
 						);
 					})}
 				</div>
+			</div>
+		</div>
+	);
+};
 
-				{/* Bottom CTA */}
+// Pages Timeline Component - No cards, timeline layout
+const PagesTimeline: React.FC = () => {
+	const pages = [
+		{
+			icon: DomeIcon,
+			title: "Página Principal",
+			description: "Landing page impactante con hero section y llamadas a la acción optimizadas.",
+			step: "01"
+		},
+		{
+			icon: Briefcase01Icon,
+			title: "Portafolio",
+			description: "Galería de proyectos con filtros interactivos y casos de estudio detallados.",
+			step: "02"
+		},
+		{
+			icon: Mail01Icon,
+			title: "Contacto",
+			description: "Formulario inteligente, mapa interactivo y múltiples canales de comunicación.",
+			step: "03"
+		},
+	];
+
+	const sectionRef = useRef<HTMLDivElement>(null);
+	const timelineRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		if (!timelineRef.current) return;
+
+		const timelineItems = timelineRef.current.querySelectorAll('.timeline-item');
+		
+		gsap.set(timelineItems, {
+			opacity: 0,
+			x: -100,
+		});
+
+		gsap.to(timelineItems, {
+			opacity: 1,
+			x: 0,
+			duration: 0.8,
+			ease: "power2.out",
+			stagger: 0.3,
+			scrollTrigger: {
+				trigger: sectionRef.current,
+				start: "top 80%",
+			}
+		});
+	}, []);
+
+	return (
+		<div ref={sectionRef} className="py-16 sm:py-20 px-4 relative overflow-hidden">
+			<div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900 to-black" />
+			
+			<div className="max-w-5xl mx-auto relative z-10">
 				<motion.div
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, delay: 0.5 }}
-					className="text-center mt-16 sm:mt-20"
+					transition={{ duration: 0.8 }}
+					className="text-center mb-16 sm:mb-20"
 				>
-					<div className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 rounded-2xl backdrop-blur-sm">
-						<ZapIcon className="w-5 h-5 text-primary" />
-						<span className="text-white text-base font-medium">
-							Todas las páginas incluidas en el paquete
+					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+						<span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+							Proceso
 						</span>
-					</div>
+						<br />
+						<span className="text-white">de Desarrollo</span>
+					</h2>
+					<ShinyText 
+						text="Cómo construimos tu sitio web paso a paso" 
+						speed={3}
+						className="text-lg sm:text-xl text-gray-300"
+					/>
 				</motion.div>
+
+				<div ref={timelineRef} className="space-y-8">
+					{pages.map((page, index) => {
+						const Icon = page.icon;
+						return (
+							<div
+								key={index}
+								className="timeline-item group relative p-6 sm:p-8 bg-slate-800/20 border border-slate-700/30 rounded-2xl hover:bg-slate-800/40 hover:border-primary/50 transition-all duration-300"
+							>
+								<div className="flex items-start gap-6">
+									<div className="flex-shrink-0">
+										<div className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center bg-gradient-to-r from-primary to-accent group-hover:scale-110 transition-transform duration-300 shadow-lg">
+											<Icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+										</div>
+									</div>
+									<div className="flex-1">
+										<div className="flex items-center gap-3 mb-2">
+											<span className="text-sm sm:text-base font-bold text-primary bg-primary/20 px-2 py-1 rounded">
+												{page.step}
+											</span>
+											<h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+												{page.title}
+											</h3>
+										</div>
+										<p className="text-gray-300 text-sm sm:text-base leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+											{page.description}
+										</p>
+									</div>
+									{index < pages.length - 1 && (
+										<div className="absolute left-6 sm:left-8 top-full w-0.5 h-8 bg-gradient-to-b from-primary to-transparent" />
+									)}
+								</div>
+							</div>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);
@@ -927,18 +893,21 @@ const PromotionPage: React.FC = () => {
 			{/* Hero Section with PixelTrail */}
 			<AmazingHero />
 
-			{/* Features Section with Cursor */}
+			{/* Features List Section with Cursor */}
 			<TargetCursor 
 				spinDuration={3}
 				hideDefaultCursor={true}
 				containerRef={featuresRef}
 			/>
 			<div ref={featuresRef}>
-				<AmazingFeatures />
+				<FeaturesList />
 			</div>
 
-			{/* Beautiful Pages Section */}
-			<BeautifulPagesSection />
+			{/* Stats Section */}
+			<StatsSection />
+
+			{/* Pages Timeline Section */}
+			<PagesTimeline />
 
 			{/* Footer */}
 			<motion.div
