@@ -398,7 +398,7 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
   );
 };
 
-// Optimized Hero Section with PixelTrail and GSAP
+// Beautiful Hero Section with PixelTrail and GSAP
 const AmazingHero: React.FC = () => {
 	const t = useTranslations("content.promo");
 	const [daysLeft, setDaysLeft] = useState(0);
@@ -440,7 +440,7 @@ const AmazingHero: React.FC = () => {
 	useEffect(() => {
 		if (!heroRef.current) return;
 
-		// Optimized GSAP timeline
+		// Beautiful GSAP timeline
 		const masterTl = gsap.timeline();
 
 		// Initial setup
@@ -449,7 +449,7 @@ const AmazingHero: React.FC = () => {
 			y: 50,
 		});
 
-		// Clean animations without weird effects
+		// Beautiful animations
 		masterTl.to(badgeRef.current, {
 			opacity: 1,
 			y: 0,
@@ -511,7 +511,7 @@ const AmazingHero: React.FC = () => {
 				{/* Badge */}
 				<div ref={badgeRef} className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 sm:py-2 bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 rounded-full mb-6 sm:mb-8">
 					<SparklesIcon className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
-					<span className="text-primary text-xs sm:text-sm font-medium">Just some shiny text!</span>
+					<span className="text-primary text-xs sm:text-sm font-medium">{t("badge")}</span>
 				</div>
 
 				{/* Main Title */}
@@ -578,7 +578,7 @@ const AmazingHero: React.FC = () => {
 	);
 };
 
-// Features List Component - No cards, just a clean list
+// Beautiful Features List Component
 const FeaturesList: React.FC = () => {
 	const t = useTranslations("content.promo");
 	const sectionRef = useRef<HTMLDivElement>(null);
@@ -612,13 +612,13 @@ const FeaturesList: React.FC = () => {
 
 		const items = listRef.current.querySelectorAll('.feature-item');
 		
-		// Clean initial setup
+		// Beautiful initial setup
 		gsap.set(items, {
 			opacity: 0,
 			x: -50,
 		});
 
-		// Simple stagger animation
+		// Beautiful stagger animation
 		gsap.to(items, {
 			opacity: 1,
 			x: 0,
@@ -642,10 +642,10 @@ const FeaturesList: React.FC = () => {
 					className="text-center mb-12 sm:mb-16 cursor-target"
 				>
 					<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-						Todo incluido
+						{t("highlight.title")}
 					</h2>
 					<ShinyText 
-						text="Características profesionales incluidas en tu sitio web" 
+						text={t("highlight.description")}
 						speed={4}
 						className="text-sm sm:text-base text-gray-400"
 					/>
@@ -681,8 +681,9 @@ const FeaturesList: React.FC = () => {
 	);
 };
 
-// Stats Component - No cards, just stats
+// Beautiful Stats Component with Special Talentix Card
 const StatsSection: React.FC = () => {
+	const t = useTranslations("content.promo");
 	const stats = [
 		{ number: "100%", label: "Responsive", icon: GlobeIcon },
 		{ number: "24/7", label: "Soporte", icon: Shield01Icon },
@@ -691,6 +692,7 @@ const StatsSection: React.FC = () => {
 
 	const sectionRef = useRef<HTMLDivElement>(null);
 	const statsRef = useRef<HTMLDivElement>(null);
+	const specialCardRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		if (!statsRef.current) return;
@@ -715,6 +717,28 @@ const StatsSection: React.FC = () => {
 				start: "top 80%",
 			}
 		});
+
+		// Special card animation
+		if (specialCardRef.current) {
+			gsap.set(specialCardRef.current, {
+				opacity: 0,
+				scale: 0.5,
+				rotation: -15,
+			});
+
+			gsap.to(specialCardRef.current, {
+				opacity: 1,
+				scale: 1,
+				rotation: 0,
+				duration: 1,
+				ease: "elastic.out(1, 0.3)",
+				delay: 0.5,
+				scrollTrigger: {
+					trigger: sectionRef.current,
+					start: "top 80%",
+				}
+			});
+		}
 	}, []);
 
 	return (
@@ -742,7 +766,7 @@ const StatsSection: React.FC = () => {
 					/>
 				</motion.div>
 
-				<div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+				<div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
 					{stats.map((stat, index) => {
 						const Icon = stat.icon;
 						return (
@@ -765,31 +789,93 @@ const StatsSection: React.FC = () => {
 						);
 					})}
 				</div>
+
+				{/* Special Talentix Card with Primary Background */}
+				<div ref={specialCardRef} className="max-w-2xl mx-auto">
+					<div className="relative p-8 sm:p-12 bg-gradient-to-br from-primary to-accent rounded-3xl shadow-2xl overflow-hidden group cursor-target">
+						{/* Background Pattern */}
+						<div className="absolute inset-0 opacity-10">
+							<div className="absolute top-4 right-4 w-32 h-32 bg-white rounded-full blur-3xl" />
+							<div className="absolute bottom-4 left-4 w-24 h-24 bg-white rounded-full blur-2xl" />
+						</div>
+						
+						{/* Content */}
+						<div className="relative z-10 text-center">
+							{/* Talentix Logo */}
+							<div className="mb-6">
+								<div className="w-20 h-20 mx-auto bg-white/20 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-500">
+									<TalentixBrandIcon className="w-12 h-12 text-white" />
+								</div>
+							</div>
+							
+							<h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">
+								{t("pricing.price")}
+							</h3>
+							
+							<div className="flex items-center justify-center gap-3 mb-6">
+								<span className="text-white/70 line-through text-lg">
+									{t("pricing.original_price")}
+								</span>
+								<span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-bold backdrop-blur-sm">
+									{t("pricing.discount")}
+								</span>
+							</div>
+							
+							<p className="text-white/90 text-base sm:text-lg mb-8 leading-relaxed">
+								{t("description")}
+							</p>
+							
+							<motion.div
+								whileHover={{ scale: 1.05 }}
+								whileTap={{ scale: 0.95 }}
+							>
+								<Button
+									intent="secondary"
+									size="large"
+									className="text-lg px-8 py-4 rounded-2xl bg-white/20 hover:bg-white/30 text-white border-white/30 backdrop-blur-sm transition-all duration-300"
+								>
+									<span className="flex items-center gap-3">
+										<Mail01Icon className="w-5 h-5" />
+										{t("cta.button")}
+										<ArrowRight01Icon className="w-4 h-4" />
+									</span>
+								</Button>
+							</motion.div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
 };
 
-// Pages Timeline Component - No cards, timeline layout
+// Beautiful Pages Timeline Component
 const PagesTimeline: React.FC = () => {
+	const t = useTranslations("content.promo");
 	const pages = [
 		{
 			icon: DomeIcon,
-			title: "Página Principal",
-			description: "Landing page impactante con hero section y llamadas a la acción optimizadas.",
+			title: t("pages.home.title"),
+			description: t("pages.home.description"),
 			step: "01"
 		},
 		{
-			icon: Briefcase01Icon,
-			title: "Portafolio",
-			description: "Galería de proyectos con filtros interactivos y casos de estudio detallados.",
+			icon: UserIcon,
+			title: t("pages.about.title"),
+			description: t("pages.about.description"),
 			step: "02"
 		},
 		{
-			icon: Mail01Icon,
-			title: "Contacto",
-			description: "Formulario inteligente, mapa interactivo y múltiples canales de comunicación.",
+			icon: Briefcase01Icon,
+			title: t("pages.portfolio.title"),
+			description: t("pages.portfolio.description"),
 			step: "03"
+		},
+		{
+			icon: Mail01Icon,
+			title: t("pages.contact.title"),
+			description: t("pages.contact.description"),
+			step: "04"
 		},
 	];
 
@@ -832,13 +918,11 @@ const PagesTimeline: React.FC = () => {
 				>
 					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
 						<span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-							Proceso
+							{t("pages.title")}
 						</span>
-						<br />
-						<span className="text-white">de Desarrollo</span>
 					</h2>
 					<ShinyText 
-						text="Cómo construimos tu sitio web paso a paso" 
+						text="Cada página diseñada para convertir visitantes en clientes" 
 						speed={3}
 						className="text-lg sm:text-xl text-gray-300"
 					/>
@@ -903,7 +987,7 @@ const PromotionPage: React.FC = () => {
 				<FeaturesList />
 			</div>
 
-			{/* Stats Section */}
+			{/* Stats Section with Special Talentix Card */}
 			<StatsSection />
 
 			{/* Pages Timeline Section */}
